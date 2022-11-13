@@ -10,3 +10,9 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+// Importing Compiled CSS Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Importing font awesome
+import '@fortawesome/fontawesome-free/js/all';
