@@ -1,2 +1,5 @@
 # Chemin d'accès à la Base De Données
 DATABASE_URL="mysql://root:@127.0.0.1:3306/grany?serverVersion=mariadb-10.4.25"
+
+# set it to 1 to enable the debug mode
+APP_DEBUG=1

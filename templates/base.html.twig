@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="fr">
+
     <head>
+
+        <title>{% block title %}Les Trésors de Grany{% endblock %}</title>
+
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<meta name="robot" content="index, follow, archive"/>
+
+		<meta name="description" lang="fr" content="Réalisation au crochet de peluches (Amigurumi), doudous, hochets, jouets, tapis de sol, couvertures, chaussons"/>
+
+		<meta name="author" content="Vincent PENET"/>
+
+		<link rel="icon" type="image/jpg" href="public/logos/logo-grany.jpg"/>
+
+		<!-- Font Roboto -->
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap">
+		
+		<!-- Fichier Media Query -->
+		<link rel="stylesheet" href="./Public/css/media-queries.css"/>
+
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -12,8 +35,15 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+
     </head>
+
     <body>
-        {% block body %}{% endblock %}
+
+        {% block body %}
+        
+        {% endblock %}
+
     </body>
+
 </html>
