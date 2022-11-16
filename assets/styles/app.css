@@ -1,3 +1,14 @@
 body {
     background-color: lightgray;
-}
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    }
+
+h2 {
+    font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 40px;
+    }
