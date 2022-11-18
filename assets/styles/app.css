@@ -1,5 +1,4 @@
 body {
-    background-color: lightgray;
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     text-align: center;
@@ -11,4 +10,39 @@ h2 {
     font-size: 80px;
     text-align: center;
     margin-top: 40px;
+    }
+
+    /* Style */
+
+/* Container Main */
+#content {
+    flex-grow:1;
+    min-height:35vh;
+	display:flex;
+	flex-direction:column;
+}
+
+/* Footer style */
+    footer {
+        color: #3256aa;
+    }
+
+    /* Footer Navbar */
+    .linkHome, .linkProject, .linkVisual, .linkAbout, .linkContact, .linkMap, .linkTerms, .linkPolicy {
+        color: #3256aa;
+    }
+
+    .linkHome, .linkHome:hover {
+        background-color: rgb(41, 196, 67);
+        border-radius: 0.5rem;
+        color: white;
+        font-weight: 800;
+    }
+
+    .linkProject:hover, .linkVisual:hover, .linkAbout:hover, .linkContact:hover, .linkMap:hover, .linkTerms:hover, .linkPolicy:hover
+    .linkProject:focus, .linkVisual:focus, .linkAbout:focus, .linkContact:focus, .linkMap:focus, .linkTerms:focus, .linkPolicy:focus {
+        background-color: rgb(41, 196, 67);
+        border-radius: 0.5rem;
+        color: white;
+        font-weight: 800;
     }
