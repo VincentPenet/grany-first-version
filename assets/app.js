@@ -16,3 +16,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Importing font awesome
 import '@fortawesome/fontawesome-free/js/all';
+
+const imagesContext = require.context('../public/images', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
+imagesContext.keys().forEach(imagesContext);
+
+const logosContext = require.context('../public/logos', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
+logosContext.keys().forEach(logosContext);
