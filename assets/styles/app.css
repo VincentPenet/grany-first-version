@@ -27,9 +27,14 @@ h2 {
     font-size: 0.8rem;
 }
 
-.linkSoftToys:hover, .linkComforter:hover, .linkRattles:hover, .linkToys:hover, .linkFloorMats:hover, .linkBlankets:hover,
+.linkSoftToys, .linkComforters, .linkRattles, .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories,
+.linkNovelties, .linkHome, .linkCatalogue, .linkAbout, .linkCleaning, .linkPolicy, .linkMap, .linkContact {
+    font-size: 1.6rem;
+}
+
+.linkSoftToys:hover, .linkComforters:hover, .linkRattles:hover, .linkToys:hover, .linkFloorMats:hover, .linkBlankets:hover,
 .linkGrannys:hover, .linkSlippers:hover, .linkAccessories:hover, .linkNovelties:hover, .linkHome:hover, .linkCatalogue:hover,
-.linkAbout:hover, .linkCleaning:hover, .linkPolicy:hover, .linkMap:hover, .linkContact:hover, .linkProject:focus, .linkVisual:focus,
+.linkAbout:hover, .linkCleaning:hover, .linkPolicy:hover, .linkMap:hover, .linkContact:hover,
 .linkAbout:focus, .linkContact:focus, .linkMap:focus, .linkPolicy:focus {
     background-color: rgb(196, 41, 160);
     border-radius: 0.5rem;
