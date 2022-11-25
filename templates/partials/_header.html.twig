@@ -1,6 +1,45 @@
 <!-- Container Header -->
-<header class="">
+<header class="row">
 
-	
+    <!-- Container Logo -->
+    <div class="ContainerImage-Logo col-1 offset-1 p-0">
+        <img class="img-fluid" style = "width: 80%;" src="{{ asset('build/images/logo-grany.png')}}" alt="logo les trésors de Grany">
+    </div>
 
+    <!-- Container General - Title / Slogan / Navbar -->
+    <div class="col-10">
+
+        <!-- Container Top - Title -->
+        <div class="row">
+        <img class="img-fluid p-0 ml-1" style = "width: 30%;" src="{{ asset('build/images/text-grany.png')}}" alt="les trésors de Grany">
+        </div>
+
+        <!-- Container Bottom - Slogan / Navbar -->
+        <div class="row">
+
+            <!-- Container Slogan -->
+            <div class="col-10 p-0">
+                <p class="text-dark fw-bold fs-5">Confection au crochet de peluches (Amigurumi), doudous, hochets, jouets, tapis de sol, couvertures, chaussons</p>
+            </div>
+
+            <!-- Container Navbar -->
+            <div class="col-8 offset-4 mt-3">
+
+                <!-- Classic inline Navbar -->
+                <nav class="headerNavbar d-flex align-self-end justify-content-end">
+                    <ul class="list-inline text-capitalize">
+                        <li class="list-inline-item"></li><a class="linkHome px-2 text-dark" href="#">accueil</a></li>
+                        <li class="list-inline-item"></li><a class="linkCatalogue px-2 text-dark" href="#">catalogue</a></li>
+                        <li class="list-inline-item"></li><a class="linkNovelties px-2 text-dark" href="#">nouveautés</a></li>
+                        <li class="list-inline-item"></li><a class="linkContact px-2 text-dark" href="#">envoyer un message</a></li>
+                        <li class="list-inline-item"></li><a class="linkAbout px-2 px-2 text-dark" href="#">à propos</a></li>
+                        <li class="list-inline-item"></li><i class="linkBurger px-2 fa-solid fa-bars"></i></li>
+                    </ul>
+                </nav>
+                
+            </div> <!-- Container Navbar -->
+            
+        </div> <!-- Container Bottom -->
+
+    </div> <!-- Container General -->
 </header>
