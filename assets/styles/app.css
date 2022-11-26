@@ -1,7 +1,5 @@
 body {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    margin-top: 40px;
     }
 
 h2 {
@@ -29,7 +27,7 @@ h2 {
 
 .linkSoftToys, .linkComforters, .linkRattles, .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories,
 .linkNovelties, .linkHome, .linkCatalogue, .linkAbout, .linkCleaning, .linkPolicy, .linkMap, .linkContact, .linkBurger {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .linkSoftToys:hover, .linkComforters:hover, .linkRattles:hover, .linkToys:hover, .linkFloorMats:hover, .linkBlankets:hover,

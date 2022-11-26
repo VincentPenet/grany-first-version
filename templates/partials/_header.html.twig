@@ -3,31 +3,41 @@
 
     <!-- Container Logo -->
     <div class="ContainerImage-Logo col-1 offset-1 p-0">
-        <img class="img-fluid" style = "width: 80%;" src="{{ asset('build/images/logo-grany.png')}}" alt="logo les trésors de Grany">
+        <img class="img-fluid" style="width: 80%;" src="{{ asset('build/images/logo-grany.png')}}" alt="logo les trésors de Grany">
     </div>
 
     <!-- Container General - Title / Slogan / Navbar -->
     <div class="col-10">
 
         <!-- Container Top - Title -->
-        <div class="row">
-        <img class="img-fluid p-0 ml-1" style = "width: 30%;" src="{{ asset('build/images/text-grany.png')}}" alt="les trésors de Grany">
+        <div class="row d-flex justify-content-between">
+            <div class="col-5 p-0">
+            <img class="img-fluid" style="width: 90%;" src="{{ asset('build/images/text-grany.png')}}" alt="les trésors de Grany">
+            </div>
+
+            <div class="col-3 text-muted mt-4">
+                <p class="m-0 pl-3">Confectionné en France</p>
+                <p class="m-0 pl-3">Fait main à partir de fils de coton</p>
+            </div>
         </div>
 
         <!-- Container Bottom - Slogan / Navbar -->
         <div class="row">
 
             <!-- Container Slogan -->
-            <div class="col-10 p-0">
-                <p class="text-dark fw-bold fs-5">Confection au crochet de peluches (Amigurumi), doudous, hochets, jouets, tapis de sol, couvertures, chaussons</p>
+            <div class="col-10">
+                <p class="text-dark fw-bold fs-6 m-0 pl-1">Confection au crochet de peluches (Amigurumi), doudous, hochets, jouets, tapis de sol, couvertures, chaussons</p>
             </div>
 
             <!-- Container Navbar -->
-            <div class="col-8 offset-4 mt-3">
+            <div class="row mt-3 text-capitalize">
+
+                <!-- breadcrumb -->
+                <p class="col-2 text-muted">accueil</p>
 
                 <!-- Classic inline Navbar -->
-                <nav class="headerNavbar d-flex align-self-end justify-content-end">
-                    <ul class="list-inline text-capitalize">
+                <nav class="headerNavbar col-10 d-flex align-self-end justify-content-end">
+                    <ul class="list-inline">
                         <li class="list-inline-item"></li><a class="linkHome px-2 text-dark" href="#">accueil</a></li>
                         <li class="list-inline-item"></li><a class="linkCatalogue px-2 text-dark" href="#">catalogue</a></li>
                         <li class="list-inline-item"></li><a class="linkNovelties px-2 text-dark" href="#">nouveautés</a></li>
