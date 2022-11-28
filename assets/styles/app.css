@@ -19,21 +19,71 @@ h2 {
 	flex-direction:column;
 }
 
+/* Header style */
+    /* Header Title */
+    .letter > li  {
+        font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    .letter li:nth-child(1), li:nth-child(11) { color: rgb(63, 72, 204); }
+    .letter li:nth-child(2), li:nth-child(13) { color: rgb(163, 73, 164); }
+    .letter li:nth-child(3), li:nth-child(14) { color: rgb(255, 174, 201); }
+    .letter li:nth-child(4), li:nth-child(12), li:nth-child(15) { color: white; }
+    .letter li:nth-child(5), li:nth-child(16) { color: rgb(237, 28, 36); }
+    .letter li:nth-child(6), li:nth-child(17) { color: rgb(255, 127, 39); }
+    .letter li:nth-child(7), li:nth-child(18) { color: rgb(252, 202, 3); }
+    .letter li:nth-child(8), li:nth-child(19) { color: rgb(34, 177, 76) }
+    .letter li:nth-child(9), li:nth-child(20) { color: rgb(0, 162, 232) }
+    .letter li:nth-child(10) { color: rgb(112, 146, 190) }
+
+    /* Header Navbar */
+
+.linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+    font-size: 1.5rem;
+}
+
+.linkHome:hover, .linkCatalogue:hover, .linkNovelties:hover, .linkContact:hover, .linkAbout:hover, .linkBurger:hover {
+    background-color: rgb(196, 41, 160);
+    border-radius: 0.5rem;
+    color: white!important;
+    font-weight: 800;
+    padding: 0.3rem;
+}
+
+.linkHome:focus, .linkCatalogue:focus, .linkNovelties:focus, .linkContact:focus, .linkAbout:focus, .linkBurger:focus {
+    background-color: rgb(196, 41, 160);
+    border-radius: 0.5rem;
+    color: white!important;
+    font-weight: 800;
+    padding: 0.3rem;
+}
+
 /* Footer style */
-    /* Footer Navbar */
 .contact p {
     font-size: 0.8rem;
 }
 
-.linkSoftToys, .linkComforters, .linkRattles, .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories,
-.linkNovelties, .linkHome, .linkCatalogue, .linkAbout, .linkCleaning, .linkPolicy, .linkMap, .linkContact, .linkBurger {
-    font-size: 1.5rem;
+    /* Footer Navbar */
+.linkpresentation, .linkSoftToys, .linkComforters, .linkRattles, .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories,
+.linkNovelties, .linkHome, .linkCatalogue, .linkAbout, .linkCleaning, .linkPolicy, .linkMap, .linkContact {
+    font-size: 1.3rem;
 }
 
-.linkSoftToys:hover, .linkComforters:hover, .linkRattles:hover, .linkToys:hover, .linkFloorMats:hover, .linkBlankets:hover,
+.linkpresentation:hover, .linkSoftToys:hover, .linkComforters:hover, .linkRattles:hover, .linkToys:hover, .linkFloorMats:hover, .linkBlankets:hover,
 .linkGrannys:hover, .linkSlippers:hover, .linkAccessories:hover, .linkNovelties:hover, .linkHome:hover, .linkCatalogue:hover,
-.linkAbout:hover, .linkCleaning:hover, .linkPolicy:hover, .linkMap:hover, .linkContact:hover, .linkBurger:hover,
-.linkAbout:focus, .linkContact:focus, .linkMap:focus, .linkPolicy:focus {
+.linkAbout:hover, .linkCleaning:hover, .linkPolicy:hover, .linkMap:hover, .linkContact:hover, .linkBurger:hover {
+    background-color: rgb(196, 41, 160);
+    border-radius: 0.5rem;
+    color: white!important;
+    font-weight: 800;
+    padding: 0.3rem;
+}
+
+.linkpresentation:focus, .linkSoftToys:focus, .linkComforters:focus, .linkRattles:focus, .linkToys:focus, .linkFloorMats:focus, .linkBlankets:focus,
+.linkGrannys:focus, .linkSlippers:focus, .linkAccessories:focus, .linkNovelties:focus, .linkHome:focus, .linkCatalogue:focus,
+.linkAbout:focus, .linkCleaning:focus, .linkPolicy:focus, .linkMap:focus, .linkContact:focus, .linkBurger:focus {
     background-color: rgb(196, 41, 160);
     border-radius: 0.5rem;
     color: white!important;

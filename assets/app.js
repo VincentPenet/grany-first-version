@@ -14,6 +14,10 @@ import './bootstrap';
 // Importing Compiled CSS Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//  import plugins individually
+import 'bootstrap/js/dist/dropdown';
+import 'bootstrap/js/dist/util';
+
 // Importing font awesome
 import '@fortawesome/fontawesome-free/js/all';
 

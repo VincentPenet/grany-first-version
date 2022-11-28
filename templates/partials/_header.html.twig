@@ -3,21 +3,44 @@
 
     <!-- Container Logo -->
     <div class="ContainerImage-Logo col-1 offset-1 p-0">
-        <img class="img-fluid" style="width: 80%;" src="{{ asset('build/images/logo-grany.png')}}" alt="logo les trésors de Grany">
+        <img class="img-fluid mt-4" style="width: 90%;" src="{{ asset('build/images/logo-grany.png')}}" alt="logo les trésors de Grany">
     </div>
 
-    <!-- Container General - Title / Slogan / Navbar -->
+    <!-- Container General - Logo /Title / Slogan / Navbar -->
     <div class="col-10">
 
         <!-- Container Top - Title -->
         <div class="row d-flex justify-content-between">
-            <div class="col-5 p-0">
-            <img class="img-fluid" style="width: 90%;" src="{{ asset('build/images/text-grany.png')}}" alt="les trésors de Grany">
+            <div class="col-8 p-0">
+                <ul class="letter m-0" role="title" aria-label="les trésors de grany">
+                    <li class="text-capitalize">l</li>
+                    <li>e</li>
+                    <li>s</li>
+                    <li>-</li>
+                    <li class="text-capitalize">t</li>
+                    <li>r</li>
+                    <li>é</li>
+                    <li>s</li>
+                    <li>o</li>
+                    <li>r</li>
+                    <li>s</li>
+                    <li>-</li>
+                    <li>d</li>
+                    <li>e</li>
+                    <li>-</li>
+                    <li class="text-capitalize">g</li>
+                    <li>r</li>
+                    <li>a</li>
+                    <li>n</li>
+                    <li>y</li>
+                </ul>
             </div>
 
-            <div class="col-3 text-muted mt-4">
-                <p class="m-0 pl-3">Confectionné en France</p>
-                <p class="m-0 pl-3">Fait main à partir de fils de coton</p>
+            <div class="col-3 d-flex text-muted mt-4 align-items-end">
+                <div>
+                    <p class="m-0 ms-5">Confectionné en France</p>
+                    <p class="m-0 ms-5">Fait main à partir de fils de coton</p>
+                </div>
             </div>
         </div>
 
@@ -29,27 +52,84 @@
                 <p class="text-dark fw-bold fs-6 m-0 pl-1">Confection au crochet de peluches (Amigurumi), doudous, hochets, jouets, tapis de sol, couvertures, chaussons</p>
             </div>
 
-            <!-- Container Navbar -->
-            <div class="row mt-3 text-capitalize">
-
-                <!-- breadcrumb -->
-                <p class="col-2 text-muted">accueil</p>
-
-                <!-- Classic inline Navbar -->
-                <nav class="headerNavbar col-10 d-flex align-self-end justify-content-end">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"></li><a class="linkHome px-2 text-dark" href="#">accueil</a></li>
-                        <li class="list-inline-item"></li><a class="linkCatalogue px-2 text-dark" href="#">catalogue</a></li>
-                        <li class="list-inline-item"></li><a class="linkNovelties px-2 text-dark" href="#">nouveautés</a></li>
-                        <li class="list-inline-item"></li><a class="linkContact px-2 text-dark" href="#">envoyer un message</a></li>
-                        <li class="list-inline-item"></li><a class="linkAbout px-2 px-2 text-dark" href="#">à propos</a></li>
-                        <li class="list-inline-item"></li><i class="linkBurger px-2 fa-solid fa-bars"></i></li>
-                    </ul>
-                </nav>
-                
-            </div> <!-- Container Navbar -->
-            
         </div> <!-- Container Bottom -->
 
     </div> <!-- Container General -->
+
+    <!-- Container General - Navbar -->
+    <div class="col-12">
+
+        <!-- Container Navbar -->
+        <div class="row mt-3 text-capitalize">
+
+            <!-- breadcrumb -->
+            <p class="col-2 offset-1 text-muted fst-italic text-decoration-underline">{{breadcrumb}}</p>
+
+
+            <!-- Classic inline Navbar -->
+            <nav class="headerNavbar col-9 d-flex align-self-end justify-content-end">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="linkHome px-2 text-dark" href="#">accueil</a></li>
+
+                    <!-- Dropdown link / Catalogue-->
+                    <li class="list-inline-item nav-item dropdown"></li>
+                        <a class="linkCatalogue px-2 text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">catalogue</a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="linkpresentation dropdown-item text-dark" href="#">présentation</a></li>
+                            <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
+                            <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
+                            <li><a class="linkRattles dropdown-item text-dark" href="#">hochets</a></li>
+                            <li><a class="linkToys dropdown-item text-dark" href="#">jouets</a></li>
+                            <li><a class="linkFloorMats dropdown-item text-dark" href="#">tapis de sol</a></li>
+                            <li><a class="linkBlankets dropdown-item text-dark" href="#">couvertures</a></li>
+                            <li><a class="linkGrannys dropdown-item text-dark" href="#">grannys</a></li>
+                            <li><a class="linkSlippers dropdown-item text-dark" href="#">chaussons</a></li>
+                            <li><a class="linkAccessories dropdown-item text-dark" href="#">accessoires</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="list-inline-item"><a class="linkNovelties px-2 text-dark" href="#">nouveautés</a></li>
+                    <li class="list-inline-item"><a class="linkContact px-2 text-dark" href="#">envoyer un message</a></li>
+
+                    <!-- Dropdown link / About-->
+                    <li class="list-inline-item nav-item dropdown">
+                        <a class="linkAbout px-2 text-dark dropdown-toggle"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">à propos</a>
+                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="linkAbout dropdown-item text-dark" href="#">à propos de moi</a></li>
+                            <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>
+                            <li><a class="linkPolicy dropdown-item text-dark" href="#">politique de confidentialité</a></li>
+                        </ul>
+                    </li>
+            </nav>
+        </div> <!-- Container Navbar -->
+
+    <!-- Menu burger / Mobile version -->
+    {# <ul class="text-capitalize list-unstyled">
+        <i class="linkBurger fa-solid fa-bars"></i>
+            <li><a class="linkHome text-dark" href="#">accueil</a></li>
+            <a class="linkCatalogue text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">catalogue</a>
+                <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="linkpresentation dropdown-item text-dark" href="#">présentation</a></li>
+                    <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
+                    <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
+                    <li><a class="linkRattles dropdown-item text-dark" href="#">hochets</a></li>
+                    <li><a class="linkToys dropdown-item text-dark" href="#">jouets</a></li>
+                    <li><a class="linkFloorMats dropdown-item text-dark" href="#">tapis de sol</a></li>
+                    <li><a class="linkBlankets dropdown-item text-dark" href="#">couvertures</a></li>
+                    <li><a class="linkGrannys dropdown-item text-dark" href="#">grannys</a></li>
+                    <li><a class="linkSlippers dropdown-item text-dark" href="#">chaussons</a></li>
+                    <li><a class="linkAccessories dropdown-item text-dark" href="#">accessoires</a></li>
+                </ul>
+            <li><a class="linkNovelties text-dark" href="#">nouveautés</a></li>
+            <li><a class="linkContact text-dark" href="#">envoyer un message</a></li>
+            <li class="nav-item dropdown">
+                <a class="linkAbout text-dark dropdown-toggle"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">à propos</a>
+                <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="linkAbout dropdown-item text-dark" href="#">à propos de moi</a></li>
+                    <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>
+                    <li><a class="linkPolicy dropdown-item text-dark" href="#">politique de confidentialité</a></li>
+                </ul>
+            </li>
+    </ul> #}
+
 </header>
