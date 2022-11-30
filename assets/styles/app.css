@@ -21,22 +21,21 @@ h2 {
 
 /* Header style */
     /* Header Title */
-    .letter > li  {
+    .titleLetters > li  {
         font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
         display: inline-block;
-        font-size: 6rem;
         font-weight: bold;
     }
-    .letter li:nth-child(1), li:nth-child(11) { color: rgb(63, 72, 204); }
-    .letter li:nth-child(2), li:nth-child(13) { color: rgb(163, 73, 164); }
-    .letter li:nth-child(3), li:nth-child(14) { color: rgb(255, 174, 201); }
-    .letter li:nth-child(4), li:nth-child(12), li:nth-child(15) { color: white; }
-    .letter li:nth-child(5), li:nth-child(16) { color: rgb(237, 28, 36); }
-    .letter li:nth-child(6), li:nth-child(17) { color: rgb(255, 127, 39); }
-    .letter li:nth-child(7), li:nth-child(18) { color: rgb(252, 202, 3); }
-    .letter li:nth-child(8), li:nth-child(19) { color: rgb(34, 177, 76) }
-    .letter li:nth-child(9), li:nth-child(20) { color: rgb(0, 162, 232) }
-    .letter li:nth-child(10) { color: rgb(112, 146, 190) }
+    .titleLetters li:nth-child(1), li:nth-child(11) { color: rgb(63, 72, 204); }
+    .titleLetters li:nth-child(2), li:nth-child(13) { color: rgb(163, 73, 164); }
+    .titleLetters li:nth-child(3), li:nth-child(14) { color: rgb(255, 174, 201); }
+    .titleLetters li:nth-child(4), li:nth-child(12), li:nth-child(15) { color: white; }
+    .titleLetters li:nth-child(5), li:nth-child(16) { color: rgb(237, 28, 36); }
+    .titleLetters li:nth-child(6), li:nth-child(17) { color: rgb(255, 127, 39); }
+    .titleLetters li:nth-child(7), li:nth-child(18) { color: rgb(252, 202, 3); }
+    .titleLetters li:nth-child(8), li:nth-child(19) { color: rgb(34, 177, 76) }
+    .titleLetters li:nth-child(9), li:nth-child(20) { color: rgb(0, 162, 232) }
+    .titleLetters li:nth-child(10) { color: rgb(112, 146, 190) }
 
     /* Header Navbar */
 
@@ -89,4 +88,183 @@ h2 {
     color: white!important;
     font-weight: 800;
     padding: 0.3rem;
+}
+
+/* Media queries Bootstrap */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    .containerImageLogo {
+        padding-top: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .titleLetters > li  {
+        font-size: 0.7rem;
+    }
+
+    .arguments p {
+        font-size: 0.2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .slogan p {
+        font-size: 0.2rem;
+    }
+
+    .ContainerBackground {
+        margin-left: 3rem;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)
+si taille d'écran supérieure à 576px
+*/
+@media (min-width: 576px) {
+    .containerImageLogo {
+        padding-top: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .titleLetters > li  {
+        font-size: 1.5rem;
+    }
+
+    .arguments {
+        margin-bottom: 0.3rem;
+    }
+
+    .arguments p {
+        font-size: 0.4rem;
+        margin-bottom: 0;
+    }
+
+    .slogan p {
+        font-size: 0.4rem;
+    }
+
+    .ContainerBackground {
+        margin-left: 3rem;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .containerImageLogo {
+        padding-top: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .titleLetters > li  {
+        font-size: 2.1rem;
+    }
+
+    .arguments p {
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .slogan p {
+        font-size: 0.5rem;
+    }
+
+    .ContainerBackground {
+        margin-left: 4rem;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .containerImageLogo {
+        padding-top: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .titleLetters > li  {
+        font-size: 3rem;
+    }
+
+    .arguments p {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+
+    .slogan p {
+        font-size: 0.7rem;
+    }
+
+    .headerNavbar > li {
+        font-size: 0.1rem;
+    }
+
+    .ContainerBackground {
+        margin-left: 4rem;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .containerImageLogo {
+        padding-top: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .titleLetters > li  {
+        font-size: 3.9rem;
+    }
+
+    .arguments p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .slogan p {
+        font-size: 0.9rem;
+    }
+
+    .headerNavbar > li {
+        font-size: 10rem;
+    }
+
+    .ContainerBackground {
+        margin-left: 6rem;
+    }
+
+}
+
+/* Extremely large devices (large desktops, 1650px and up) */
+@media (min-width: 1650px) {
+    .containerImageLogo {
+        padding-top: 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .titleLetters > li  {
+        font-size: 5.8rem;
+    }
+
+    .arguments p {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        margin-left: 0.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .slogan p {
+        font-size: 1.2rem;
+    }
+
+    .ContainerBackground {
+        margin-left: 8rem;
+    }
 }
