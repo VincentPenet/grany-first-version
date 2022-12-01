@@ -4,9 +4,6 @@ body {
 
 h2 {
     font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80px;
-    text-align: center;
-    margin-top: 40px;
     }
 
     /* Style */
@@ -38,11 +35,6 @@ h2 {
     .titleLetters li:nth-child(10) { color: rgb(112, 146, 190) }
 
     /* Header Navbar */
-
-.linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
-    font-size: 1.5rem;
-}
-
 .linkHome:hover, .linkCatalogue:hover, .linkNovelties:hover, .linkContact:hover, .linkAbout:hover, .linkBurger:hover {
     background-color: rgb(196, 41, 160);
     border-radius: 0.5rem;
@@ -117,6 +109,14 @@ h2 {
         margin-left: 3rem;
     }
 
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+        font-size: 0.3rem;
+    }
+
+    .headerNavbar {
+        display: none;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up)
@@ -150,6 +150,14 @@ si taille d'écran supérieure à 576px
         margin-left: 3rem;
     }
 
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+        font-size: 0.5rem;
+    }
+
+    .headerNavbarBurger {
+        display: none;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -175,6 +183,14 @@ si taille d'écran supérieure à 576px
 
     .ContainerBackground {
         margin-left: 4rem;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+        font-size: 0.7rem;
+    }
+
+    .headerNavbarBurger {
+        display: none;
     }
 
 }
@@ -208,10 +224,18 @@ si taille d'écran supérieure à 576px
         margin-left: 4rem;
     }
 
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+        font-size: 1rem;
+    }
+
+    .headerNavbarBurger {
+        display: none;
+    }
+
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* Extra large devices (large desktops, 1230px and up) */
+@media (min-width: 1230px) {
     .containerImageLogo {
         padding-top: 0.5rem;
         padding-left: 0;
@@ -237,6 +261,14 @@ si taille d'écran supérieure à 576px
 
     .ContainerBackground {
         margin-left: 6rem;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+        font-size: 1.5rem;
+    }
+
+    .headerNavbarBurger {
+        display: none;
     }
 
 }
@@ -267,4 +299,17 @@ si taille d'écran supérieure à 576px
     .ContainerBackground {
         margin-left: 8rem;
     }
+
+    .breadcrumb {
+        font-size: 0.9rem;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+        font-size: 1.5rem;
+    }
+
+    .headerNavbarBurger {
+        display: none;
+    }
+
 }
