@@ -36,7 +36,7 @@
                 </ul>
             </div>
 
-            <div class="col-3 d-flex text-muted mt-4 p-0 align-items-end">
+            <div class="containerArguments col-3 d-flex text-muted p-0 align-items-end">
                 <div class="arguments col-12">
                     <p class="p-0">Confectionné en France</p>
                     <p class="p-0">Fait main à partir de fils de coton</p>
@@ -60,22 +60,22 @@
     <div class="col-12">
 
         <!-- Container Navbar -->
-        <div class="row mt-3 text-capitalize">
+        <div class="containerNavbar row text-capitalize">
 
             <!-- breadcrumb -->
-            <p class="col-2 offset-1 text-muted fst-italic text-decoration-underline">{{breadcrumb}}</p>
+            <p class="containerBreadcrumb col-2 offset-1 text-muted fst-italic text-decoration-underline">{{breadcrumb}}</p>
 {# A propos / Politique de Confidentialité #}
 
             <!-- Classic inline Navbar -->
             <nav class="headerNavbar col-9 d-flex align-self-end justify-content-end">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a class="linkHome px-2 text-dark" href="#">accueil</a></li>
+                    <li class="list-inline-item"><a class="linkHome text-dark" href="#">accueil</a></li>
 
                     <!-- Dropdown link / Catalogue-->
                     <li class="list-inline-item nav-item dropdown"></li>
-                        <a class="linkCatalogue px-2 text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">catalogue</a>
+                        <a class="linkCatalogue text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">catalogue</a>
                         <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="linkpresentation dropdown-item text-dark" href="#">présentation</a></li>
+                            <li><a class="linkPresentation dropdown-item text-dark" href="#">présentation</a></li>
                             <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
                             <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
                             <li><a class="linkRattles dropdown-item text-dark" href="#">hochets</a></li>
@@ -88,51 +88,59 @@
                         </ul>
                     </li>
 
-                    <li class="list-inline-item"><a class="linkNovelties px-2 text-dark" href="#">nouveautés</a></li>
-                    <li class="list-inline-item"><a class="linkContact px-2 text-dark" href="#">envoyer un message</a></li>
+                    <li class="list-inline-item"><a class="linkNovelties text-dark" href="#">nouveautés</a></li>
+                    <li class="list-inline-item"><a class="linkContact text-dark" href="#">envoyer un message</a></li>
 
                     <!-- Dropdown link / About-->
                     <li class="list-inline-item nav-item dropdown">
-                        <a class="linkAbout px-2 text-dark dropdown-toggle"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">à propos</a>
+                        <a class="linkAbout text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">à propos</a>
                         <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="linkAbout dropdown-item text-dark" href="#">à propos de moi</a></li>
+                            <li><a class="linkAboutMe dropdown-item text-dark" href="#">à propos de moi</a></li>
                             <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>
                             <li><a class="linkPolicy dropdown-item text-dark" href="#">politique de confidentialité</a></li>
                         </ul>
                     </li>
+                </ul>
             </nav>
+
+            <!-- Menu burger / Mobile version -->
+            <nav class="headerNavbarBurger col-2 d-flex align-self-end justify-content-end dropstart">
+                <button class="btn fs-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i></button>
+
+                <ul class=" list-unstyled dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="linkHome text-dark dropdown-item" href="#">accueil</a></li>
+
+                    <!-- Dropdown link / Catalogue-->
+                    <li class="dropdown-item">
+                        <a class="linkCatalogue text-dark dropdown-item" href="#">catalogue</a>
+                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left text-capitalize">
+                            <li><a class="linkPresentation dropdown-item text-dark" href="#">présentation</a></li>
+                            <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
+                            <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
+                            <li><a class="linkRattles dropdown-item text-dark" href="#">hochets</a></li>
+                            <li><a class="linkToys dropdown-item text-dark" href="#">jouets</a></li>
+                            <li><a class="linkFloorMats dropdown-item text-dark" href="#">tapis de sol</a></li>
+                            <li><a class="linkBlankets dropdown-item text-dark" href="#">couvertures</a></li>
+                            <li><a class="linkGrannys dropdown-item text-dark" href="#">grannys</a></li>
+                            <li><a class="linkSlippers dropdown-item text-dark" href="#">chaussons</a></li>
+                            <li><a class="linkAccessories dropdown-item text-dark" href="#">accessoires</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="linkNovelties text-dark dropdown-item" href="#">nouveautés</a></li>
+                    <li><a class="linkContact text-dark dropdown-item" href="#">envoyer un message</a></li>
+
+                    <!-- Dropdown link / About-->
+                    <li class="dropdown">
+                        <a class="linkAbout text-dark dropdown-item" href="#">à propos</a>
+                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left text-capitalize">
+                            <li><a class="linkAboutMe dropdown-item text-dark" href="#">à propos de moi</a></li>
+                            <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>
+                            <li><a class="linkPolicy dropdown-item text-dark" href="#">politique de confidentialité</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> <!-- Menu burger / Mobile version -->
         </div> <!-- Container Navbar -->
-
-    <!-- Menu burger / Mobile version -->
-    <nav class="headerNavbarBurger">
-
-        <ul class="text-capitalize list-unstyled">
-            <i class="linkBurger fa-solid fa-bars"></i>
-                <li><a class="linkHome text-dark" href="#">accueil</a></li>
-                <a class="linkCatalogue text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">catalogue</a>
-                    <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="linkpresentation dropdown-item text-dark" href="#">présentation</a></li>
-                        <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
-                        <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
-                        <li><a class="linkRattles dropdown-item text-dark" href="#">hochets</a></li>
-                        <li><a class="linkToys dropdown-item text-dark" href="#">jouets</a></li>
-                        <li><a class="linkFloorMats dropdown-item text-dark" href="#">tapis de sol</a></li>
-                        <li><a class="linkBlankets dropdown-item text-dark" href="#">couvertures</a></li>
-                        <li><a class="linkGrannys dropdown-item text-dark" href="#">grannys</a></li>
-                        <li><a class="linkSlippers dropdown-item text-dark" href="#">chaussons</a></li>
-                        <li><a class="linkAccessories dropdown-item text-dark" href="#">accessoires</a></li>
-                    </ul>
-                <li><a class="linkNovelties text-dark" href="#">nouveautés</a></li>
-                <li><a class="linkContact text-dark" href="#">envoyer un message</a></li>
-                <li class="nav-item dropdown">
-                    <a class="linkAbout text-dark dropdown-toggle"href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">à propos</a>
-                    <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="linkAbout dropdown-item text-dark" href="#">à propos de moi</a></li>
-                        <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>
-                        <li><a class="linkPolicy dropdown-item text-dark" href="#">politique de confidentialité</a></li>
-                    </ul>
-                </li>
-        </ul>
-    </nav> <!-- Menu burger / Mobile version -->
-
 </header>

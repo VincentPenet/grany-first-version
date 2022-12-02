@@ -7,19 +7,19 @@
 		<div class="row">
 
 			<!-- Classic inline Navbar -->
-			<nav class="footerNavbar text-center pt-4" role="navigation" aria-label="Menu accès aux produits catalogue">
+			<nav class="footerNavbar text-center" role="navigation" aria-label="Menu accès aux produits du catalogue">
 				<ul class="list-inline text-capitalize">
-					<li class="list-inline-item"><a class="linkpresentation px-2 text-dark" href="#">présentation</a></li>
-					<li class="list-inline-item"><a class="linkSoftToys px-2 text-dark" href="#">peluches (Amigurumi)</a></li>
-					<li class="list-inline-item"><a class="linkComforters px-2 text-dark" href="#">doudous</a></li>
-					<li class="list-inline-item"><a class="linkRattles px-2 text-dark" href="#">hochets</a></li>
-					<li class="list-inline-item"><a class="linkToys px-2 text-dark" href="#">jouets</a></li>
-					<li class="list-inline-item"><a class="linkFloorMats px-2 text-dark" href="#">tapis de sol</a></li>
-					<li class="list-inline-item"><a class="linkBlankets px-2 text-dark" href="#">couvertures</a></li>
-					<li class="list-inline-item"><a class="linkGrannys px-2 text-dark" href="#">grannys</a></li>
-					<li class="list-inline-item"><a class="linkSlippers px-2 text-dark" href="#">chaussons</a></li>
-					<li class="list-inline-item"><a class="linkAccessories px-2 text-dark" href="#">accessoires</a></li>
-					<li class="list-inline-item"><a class="linkNovelties px-2 text-dark" href="#">nouveautés</a></li>
+					<li class="list-inline-item"><a class="linkPresentationF text-dark" href="#">présentation</a></li>
+					<li class="list-inline-item"><a class="linkSoftToysF text-dark" href="#">peluches (Amigurumi)</a></li>
+					<li class="list-inline-item"><a class="linkComfortersF text-dark" href="#">doudous</a></li>
+					<li class="list-inline-item"><a class="linkRattlesF text-dark" href="#">hochets</a></li>
+					<li class="list-inline-item"><a class="linkToysF text-dark" href="#">jouets</a></li>
+					<li class="list-inline-item"><a class="linkFloorMatsF text-dark" href="#">tapis de sol</a></li>
+					<li class="list-inline-item"><a class="linkBlanketsF text-dark" href="#">couvertures</a></li>
+					<li class="list-inline-item"><a class="linkGrannysF text-dark" href="#">grannys</a></li>
+					<li class="list-inline-item"><a class="linkSlippersF text-dark" href="#">chaussons</a></li>
+					<li class="list-inline-item"><a class="linkAccessoriesF text-dark" href="#">accessoires</a></li>
+					<li class="list-inline-item"><a class="linkNoveltiesF text-dark" href="#">nouveautés</a></li>
 				</ul>
 			</nav>
 			
@@ -31,12 +31,12 @@
 			<!-- Classic inline Navbar -->
 			<nav class="footerNavbar" role="navigation" aria-label="Menu principal">
 				<ul class="list-inline text-capitalize">
-					<li class="list-inline-item"><a class="linkHome px-2 text-dark" href="#" aria-current="page">accueil</a></li>
-					<li class="list-inline-item"><a class="linkCatalogue px-2 text-dark" href="#">catalogue</a></li>
-					<li class="list-inline-item"><a class="linkAbout px-2 text-dark" href="#" aria-label="About me">à propos de moi</a></li>
-					<li class="list-inline-item"><a class="linkCleaning px-2 text-dark" href="#">entretien nettoyage</a></li>
-					<li class="list-inline-item"><a class="linkPolicy px-2 text-dark" href="#">politique de confidentialité</a></li>
-					<li class="list-inline-item"><a class="linkMap px-2 text-dark" href="#">plan du site</a></li>
+					<li class="list-inline-item"><a class="linkHomeF text-dark" href="#" aria-current="page">accueil</a></li>
+					<li class="list-inline-item"><a class="linkCatalogueF text-dark" href="#">catalogue</a></li>
+					<li class="list-inline-item"><a class="linkAboutF text-dark" href="#" aria-label="About me">à propos de moi</a></li>
+					<li class="list-inline-item"><a class="linkCleaningF text-dark" href="#">entretien nettoyage</a></li>
+					<li class="list-inline-item"><a class="linkPolicyF text-dark" href="#">politique de confidentialité</a></li>
+					<li class="list-inline-item"><a class="linkMapF text-dark" href="#">plan du site</a></li>
 				</ul>
 			</nav>
 		</div> <!-- Container Navbar general-->
@@ -44,16 +44,18 @@
 
 		<!-- Container Middle - Send message / Contact -->
 		<div class="row align-items-center justify-content-evenly text-center">
-			<a class="col-3 linkContact py-3 text-capitalize text-dark fw-bold" href="#">envoyer un message</a>
-			<p class="m-0"><span><i class="fa-regular fa-envelope"></i></span> contact@grany.fr</p>
-			<p class="mt-2 mb-0">59000 Lille - France</p>
+			<a class="linkContactF col-3 text-capitalize text-dark fw-bold" href="#">envoyer un message</a>
+			<div class="infoContact">
+				<p class="m-0"><span><i class="fa-regular fa-envelope"></i></span> contact@grany.fr</p>
+				<p class="mb-0">59000 Lille - France</p>
+			</div>
 		</div>
 
-	<!-- Container Bottom - Copyright -->
-	<div class="d-flex justify-content-end align-items-center">
-		<p class="col-2 offset-7 text-end mt-4 px-2">2022 Lille - </p>
-		<img class="col-1 img-fluid" style = "width: 30px;" src="{{ asset('build/images/pom-grany.jpg')}}" alt="Logo pomme">
-		<p class="col-2 text-start mt-4 px-2">Pom & Grany Production</p>
+	<!-- Container Bottom - Information production -->
+	<div class="infoProduction d-flex justify-content-end align-items-center">
+		<p class="col-2 offset-7 text-end">2022 Lille - </p>
+		<img class="col-1 img-fluid" src="{{ asset('build/images/pom-grany.jpg')}}" alt="Logo pomme">
+		<p class="col-2 text-start">Pom & Grany Production</p>
 	</div>
 
 </Footer>

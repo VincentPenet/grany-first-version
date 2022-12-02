@@ -35,21 +35,42 @@ h2 {
     .titleLetters li:nth-child(10) { color: rgb(112, 146, 190) }
 
     /* Header Navbar */
-.linkHome:hover, .linkCatalogue:hover, .linkNovelties:hover, .linkContact:hover, .linkAbout:hover, .linkBurger:hover {
-    background-color: rgb(196, 41, 160);
-    border-radius: 0.5rem;
-    color: white!important;
-    font-weight: 800;
-    padding: 0.3rem;
-}
+    .linkHome:hover, .linkCatalogue:hover, .linkNovelties:hover, .linkContact:hover, .linkAbout:hover {
+        background-color: rgb(196, 41, 160);
+        border-radius: 0.5rem;
+        color: white!important;
+        font-weight: 800;
+        padding: 0.3rem;
+    }
 
-.linkHome:focus, .linkCatalogue:focus, .linkNovelties:focus, .linkContact:focus, .linkAbout:focus, .linkBurger:focus {
-    background-color: rgb(196, 41, 160);
-    border-radius: 0.5rem;
-    color: white!important;
-    font-weight: 800;
-    padding: 0.3rem;
-}
+    .linkHome:focus, .linkCatalogue:focus, .linkNovelties:focus, .linkContact:focus, .linkAbout:focus {
+        background-color: rgb(196, 41, 160);
+        border-radius: 0.5rem;
+        color: white!important;
+        font-weight: 800;
+        padding: 0.3rem;
+    }
+
+    /* Navbar Burger */
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    }
+
+    .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+    }
+
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }
 
 /* Footer style */
 .contact p {
@@ -57,34 +78,30 @@ h2 {
 }
 
     /* Footer Navbar */
-.linkpresentation, .linkSoftToys, .linkComforters, .linkRattles, .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories,
-.linkNovelties, .linkHome, .linkCatalogue, .linkAbout, .linkCleaning, .linkPolicy, .linkMap, .linkContact {
-    font-size: 1.3rem;
-}
+    .linkPresentationF:hover, .linkSoftToysF:hover, .linkComfortersF:hover, .linkRattlesF:hover, .linkToysF:hover, .linkFloorMatsF:hover, .linkBlanketsF:hover,
+    .linkGrannysF:hover, .linkSlippersF:hover, .linkAccessoriesF:hover, .linkNoveltiesF:hover, .linkHomeF:hover, .linkCatalogueF:hover,
+    .linkAboutF:hover, .linkAboutMeF:hover, .linkCleaningF:hover, .linkPolicyF:hover, .linkMapF:hover, .linkContactF:hover {
+        background-color: rgb(196, 41, 160);
+        border-radius: 0.5rem;
+        color: white!important;
+        font-weight: 800;
+        padding: 0.3rem;
+    }
 
-.linkpresentation:hover, .linkSoftToys:hover, .linkComforters:hover, .linkRattles:hover, .linkToys:hover, .linkFloorMats:hover, .linkBlankets:hover,
-.linkGrannys:hover, .linkSlippers:hover, .linkAccessories:hover, .linkNovelties:hover, .linkHome:hover, .linkCatalogue:hover,
-.linkAbout:hover, .linkCleaning:hover, .linkPolicy:hover, .linkMap:hover, .linkContact:hover, .linkBurger:hover {
-    background-color: rgb(196, 41, 160);
-    border-radius: 0.5rem;
-    color: white!important;
-    font-weight: 800;
-    padding: 0.3rem;
-}
-
-.linkpresentation:focus, .linkSoftToys:focus, .linkComforters:focus, .linkRattles:focus, .linkToys:focus, .linkFloorMats:focus, .linkBlankets:focus,
-.linkGrannys:focus, .linkSlippers:focus, .linkAccessories:focus, .linkNovelties:focus, .linkHome:focus, .linkCatalogue:focus,
-.linkAbout:focus, .linkCleaning:focus, .linkPolicy:focus, .linkMap:focus, .linkContact:focus, .linkBurger:focus {
-    background-color: rgb(196, 41, 160);
-    border-radius: 0.5rem;
-    color: white!important;
-    font-weight: 800;
-    padding: 0.3rem;
-}
+    .linkPresentationF:focus, .linkSoftToysF:focus, .linkComfortersF:focus, .linkRattlesF:focus, .linkToysF:focus, .linkFloorMatsF:focus, .linkBlanketsF:focus,
+    .linkGrannysF:focus, .linkSlippersF:focus, .linkAccessoriesF:focus, .linkNoveltiesF:focus, .linkHomeF:focus, .linkCatalogueF:focus,
+    .linkAboutF:focus, .linkAboutMeF:focus, .linkCleaningF:focus, .linkPolicyF:focus, .linkMapF:focus, .linkContactF:focus {
+        background-color: rgb(196, 41, 160);
+        border-radius: 0.5rem;
+        color: white!important;
+        font-weight: 800;
+        padding: 0.3rem;
+    }
 
 /* Media queries Bootstrap */
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
+    /* Extra small devices (portrait phones, less than 576px) */
+    @media (max-width: 576px) {
+    /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
         padding-left: 0;
@@ -93,6 +110,10 @@ h2 {
 
     .titleLetters > li  {
         font-size: 0.7rem;
+    }
+
+    .containerArguments {
+        margin-top: 0;
     }
 
     .arguments p {
@@ -105,26 +126,73 @@ h2 {
         font-size: 0.2rem;
     }
 
+    .containerNavbar {
+        margin-top: 1rem;
+    }
+
+    .containerBreadcrumb {
+        margin-left: 3rem;
+        font-size: 0.2rem;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+        font-size: 0.3rem;
+        padding-left: 1.5rem;
+    }
+
+    .list-inline-item {
+        margin-right: 0!important;
+    }
+
+    .headerNavbar {
+        display: none!important;
+    }
+
     .ContainerBackground {
         margin-left: 3rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
-        font-size: 0.3rem;
-    }
-
-    .headerNavbar {
+    /* Footer Navbar */
+    .footerNavbar {
         display: none;
     }
 
-}
+    .linkContactF {
+        font-size: 0.3rem;
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-/* Small devices (landscape phones, 576px and up)
-si taille d'écran supérieure à 576px
-*/
-@media (min-width: 576px) {
+    .infoContact {
+        font-size: 0.2rem;
+        margin-top: 0.1rem;
+    }
+
+    .infoProduction {
+        font-size: 0.2rem;
+    }
+
+    .infoProduction p {
+        margin-top: 0.2rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        margin-bottom: 0;
+    }
+
+    .infoProduction img {
+        width: 2%;
+    }
+
+    }
+
+    /* Small devices (landscape phones, 576px and up)
+    si taille d'écran supérieure à 576px
+    */
+    @media (min-width: 576px) {
+    /* Header Navbar */
     .containerImageLogo {
-        padding-top: 0.5rem;
+        padding-top: 0.3rem;
         padding-left: 0;
         padding-right: 0;
     }
@@ -137,8 +205,13 @@ si taille d'écran supérieure à 576px
         margin-bottom: 0.3rem;
     }
 
+    .containerArguments {
+        margin-top: 0;
+    }
+
     .arguments p {
         font-size: 0.4rem;
+        margin-top: 0rem;
         margin-bottom: 0;
     }
 
@@ -146,22 +219,80 @@ si taille d'écran supérieure à 576px
         font-size: 0.4rem;
     }
 
-    .ContainerBackground {
-        margin-left: 3rem;
+    .containerNavbar {
+        margin-top: 1rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+    .containerBreadcrumb {
+        margin-left: 3rem;
+        font-size: 0.3rem;
+        margin-bottom: 0;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
         font-size: 0.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .list-inline {
+        margin-bottom: 0;
+    }
+
+    .list-inline-item {
+        margin-right: 0!important;
     }
 
     .headerNavbarBurger {
         display: none;
     }
 
-}
+    .ContainerBackground {
+        margin-left: 3rem;
+    }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+    /* Footer Navbar */
+    .footerNavbar {
+        padding-top: 0;
+    }
+
+    .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+        font-size: 0.4rem;
+        padding-left: 0.1rem;
+    }
+
+    .linkContactF {
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .infoContact {
+        font-size: 0.3rem;
+        margin-top: 0.3rem;
+    }
+
+    .infoProduction {
+        font-size: 0.3rem;
+    }
+
+    .infoProduction p {
+        margin-top: 0.2rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        margin-bottom: 0;
+    }
+
+    .infoProduction img {
+        width: 2%;
+    }
+
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+    /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
         padding-left: 0;
@@ -172,6 +303,10 @@ si taille d'écran supérieure à 576px
         font-size: 2.1rem;
     }
 
+    .containerArguments {
+        margin-top: 4rem;
+    }
+
     .arguments p {
         font-size: 0.5rem;
         margin-bottom: 0;
@@ -181,22 +316,79 @@ si taille d'écran supérieure à 576px
         font-size: 0.5rem;
     }
 
-    .ContainerBackground {
-        margin-left: 4rem;
+    .containerNavbar {
+        margin-top: 0;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
+    .containerBreadcrumb {
+        margin-left: 4rem;
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
         font-size: 0.7rem;
+        padding-left: 0.3rem;
+    }
+
+    .list-inline {
+        margin-bottom: 0;
+    }
+
+    .list-inline-item {
+        margin-right: 0!important;
     }
 
     .headerNavbarBurger {
         display: none;
     }
 
-}
+    .ContainerBackground {
+        margin-left: 4rem;
+    }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+    /* Footer Navbar */
+    .footerNavbar {
+        padding-top: 0rem;
+    }
+
+    .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+        font-size: 0.5rem;
+        padding-left: 0.4rem;
+    }
+
+    .linkContactF {
+        font-size: 0.5rem;
+        margin-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .infoContact {
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .infoProduction {
+        font-size: 0.5rem;
+    }
+
+    .infoProduction p {
+        margin-top: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .infoProduction img {
+        width: 2%;
+    }
+
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+    /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
         padding-left: 0;
@@ -207,6 +399,10 @@ si taille d'écran supérieure à 576px
         font-size: 3rem;
     }
 
+    .containerArguments {
+        margin-top: 4rem;
+    }
+
     .arguments p {
         font-size: 0.7rem;
         margin-bottom: 0;
@@ -216,26 +412,78 @@ si taille d'écran supérieure à 576px
         font-size: 0.7rem;
     }
 
+    .containerNavbar {
+        margin-top: 1rem;
+    }
+
+    .containerBreadcrumb {
+        margin-left: 4rem;
+        font-size: 0.7rem;
+    }
+
     .headerNavbar > li {
         font-size: 0.1rem;
     }
 
-    .ContainerBackground {
-        margin-left: 4rem;
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+        font-size: 0.8rem;
+        padding-left: 0.6rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
-        font-size: 1rem;
+    .list-inline-item {
+        margin-right: 0!important;
     }
 
     .headerNavbarBurger {
         display: none;
     }
 
-}
+    .ContainerBackground {
+        margin-left: 4rem;
+    }
 
-/* Extra large devices (large desktops, 1230px and up) */
-@media (min-width: 1230px) {
+    /* Footer Navbar */
+    .footerNavbar {
+        padding-top: 0.2rem;
+    }
+
+    .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+        font-size: 0.7rem;
+        padding-left: 0.6rem;
+    }
+
+    .linkContactF {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .infoContact {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .infoProduction {
+        font-size: 0.6rem;
+    }
+
+    .infoProduction p {
+        margin-top: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .infoProduction img {
+        width: 2%;
+    }
+
+    }
+
+    /* Extra large devices (large desktops, 1230px and up) */
+    @media (min-width: 1230px) {
+    /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
         padding-left: 0;
@@ -246,6 +494,10 @@ si taille d'écran supérieure à 576px
         font-size: 3.9rem;
     }
 
+    .containerArguments {
+        margin-top: 4rem;
+    }
+
     .arguments p {
         font-size: 0.9rem;
         margin-bottom: 0;
@@ -255,26 +507,78 @@ si taille d'écran supérieure à 576px
         font-size: 0.9rem;
     }
 
+    .containerNavbar {
+        margin-top: 1rem;
+    }
+
+    .containerBreadcrumb {
+        margin-left: 6rem;
+        font-size: 1rem;
+    }
+
     .headerNavbar > li {
         font-size: 10rem;
     }
 
-    .ContainerBackground {
-        margin-left: 6rem;
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+        font-size: 1.2rem;
+        padding-left: 0.6rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
-        font-size: 1.5rem;
+    .list-inline-item {
+        margin-right: 0!important;
     }
 
     .headerNavbarBurger {
         display: none;
     }
 
-}
+    .ContainerBackground {
+        margin-left: 6rem;
+    }
 
-/* Extremely large devices (large desktops, 1650px and up) */
-@media (min-width: 1650px) {
+    /* Footer Navbar */
+    .footerNavbar {
+        padding-top: 1rem;
+    }
+
+    .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+        font-size: 0.9rem;
+        padding-left: 0.8rem;
+    }
+
+    .linkContactF {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .infoContact {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .infoProduction {
+        font-size: 0.8rem;
+    }
+
+    .infoProduction p {
+        margin-top: 1.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .infoProduction img {
+        width: 2%;
+    }
+
+    }
+
+    /* Extremely large devices (large desktops, 1650px and up) */
+    @media (min-width: 1650px) {
+    /* Header Navbar */
     .containerImageLogo {
         padding-top: 1.5rem;
         padding-left: 0;
@@ -283,6 +587,10 @@ si taille d'écran supérieure à 576px
 
     .titleLetters > li  {
         font-size: 5.8rem;
+    }
+
+    .containerArguments {
+        margin-top: 4rem;
     }
 
     .arguments p {
@@ -296,20 +604,67 @@ si taille d'écran supérieure à 576px
         font-size: 1.2rem;
     }
 
+    .containerNavbar {
+        margin-top: 1rem;
+    }
+
+    .containerBreadcrumb {
+        margin-left: 8rem;
+        font-size: 1rem;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+        font-size: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .list-inline-item {
+        margin-right: 0!important;
+    }
+
+    .headerNavbarBurger {
+        display: none!important;
+    }
+
     .ContainerBackground {
         margin-left: 8rem;
     }
 
-    .breadcrumb {
-        font-size: 0.9rem;
+    /* Footer Navbar */
+    .footerNavbar {
+        padding-top: 1rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkBurger {
-        font-size: 1.5rem;
+    .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+        font-size: 1.2rem;
+        padding-left: 2rem;
     }
 
-    .headerNavbarBurger {
-        display: none;
+    .linkContactF {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .infoContact {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .infoProduction {
+        font-size: 1rem;
+    }
+
+    .infoProduction p {
+        margin-top: 1.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .infoProduction img {
+        width: 2%;
     }
 
 }
