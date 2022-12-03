@@ -12,7 +12,7 @@
         <!-- Container Top - Title / Arguments -->
         <div class="row d-flex justify-content-between p-0">
             <div class="col-9 p-0">
-                <ul class="titleLetters m-0 ps-3" role="title" aria-label="les trésors de grany">
+                <ul class="titleLetters m-0" role="title" aria-label="les trésors de grany">
                     <li class="text-capitalize">l</li>
                     <li>e</li>
                     <li>s</li>
@@ -64,7 +64,6 @@
 
             <!-- breadcrumb -->
             <p class="containerBreadcrumb col-2 offset-1 text-muted fst-italic text-decoration-underline">{{breadcrumb}}</p>
-{# A propos / Politique de Confidentialité #}
 
             <!-- Classic inline Navbar -->
             <nav class="headerNavbar col-9 d-flex align-self-end justify-content-end">
@@ -104,15 +103,15 @@
             </nav>
 
             <!-- Menu burger / Mobile version -->
-            <nav class="headerNavbarBurger col-2 d-flex align-self-end justify-content-end dropstart">
-                <button class="btn fs-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <nav class="headerNavbarBurger col-1 d-flex align-self-end justify-content-end dropstart">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i></button>
 
-                <ul class=" list-unstyled dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <ul class="list-unstyled dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="linkHome text-dark dropdown-item" href="#">accueil</a></li>
 
                     <!-- Dropdown link / Catalogue-->
-                    <li class="dropdown-item">
+                    <li class="dropdown">
                         <a class="linkCatalogue text-dark dropdown-item" href="#">catalogue</a>
                         <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left text-capitalize">
                             <li><a class="linkPresentation dropdown-item text-dark" href="#">présentation</a></li>

@@ -35,7 +35,9 @@ h2 {
     .titleLetters li:nth-child(10) { color: rgb(112, 146, 190) }
 
     /* Header Navbar */
-    .linkHome:hover, .linkCatalogue:hover, .linkNovelties:hover, .linkContact:hover, .linkAbout:hover {
+    .linkHome:hover, .linkCatalogue:hover, .linkNovelties:hover, .linkContact:hover, .linkAbout:hover, .linkPresentation:hover,
+    .linkSoftToys:hover, .linkComforters:hover, .linkRattles:hover, .linkToys:hover, .linkFloorMats:hover, .linkBlankets:hover,
+    .linkGrannys:hover, .linkSlippers:hover, .linkAccessories:hover, .linkAboutMe:hover, .linkCleaning:hover, .linkPolicy:hover {
         background-color: rgb(196, 41, 160);
         border-radius: 0.5rem;
         color: white!important;
@@ -43,7 +45,9 @@ h2 {
         padding: 0.3rem;
     }
 
-    .linkHome:focus, .linkCatalogue:focus, .linkNovelties:focus, .linkContact:focus, .linkAbout:focus {
+    .linkHome:focus, .linkCatalogue:focus, .linkNovelties:focus, .linkContact:focus, .linkAbout:focus, .linkPresentation:focus,
+    .linkSoftToys:focus, .linkComforters:focus, .linkRattles:focus, .linkToys:focus, .linkFloorMats:focus, .linkBlankets:focus,
+    .linkGrannys:focus, .linkSlippers:focus, .linkAccessories:focus, .linkAboutMe:focus, .linkCleaning:focus, .linkPolicy:focus {
         background-color: rgb(196, 41, 160);
         border-radius: 0.5rem;
         color: white!important;
@@ -99,17 +103,22 @@ h2 {
     }
 
 /* Media queries Bootstrap */
-    /* Extra small devices (portrait phones, less than 576px) */
-    @media (max-width: 576px) {
+    /* Extra small devices (portrait phones, 300px and up) */
+    @media (min-width: 300px) {
     /* Header Navbar */
     .containerImageLogo {
-        padding-top: 0.5rem;
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 0.2rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+    .titleLetters {
+        padding-left: 0!important;
     }
 
     .titleLetters > li  {
         font-size: 0.7rem;
+        padding-left: 0;
     }
 
     .containerArguments {
@@ -122,20 +131,25 @@ h2 {
         padding-bottom: 0;
     }
 
-    .slogan p {
+    .slogan {
         font-size: 0.2rem;
+        padding-left: 0;
     }
 
     .containerNavbar {
-        margin-top: 1rem;
+        margin-top: 0.3rem;
+        display: flex;
+        justify-content: space-between;
     }
 
     .containerBreadcrumb {
         margin-left: 3rem;
-        font-size: 0.2rem;
+        font-size: 0.3rem;
+        margin-bottom: 0;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
+    .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
         font-size: 0.3rem;
         padding-left: 1.5rem;
     }
@@ -145,9 +159,15 @@ h2 {
     }
 
     .headerNavbar {
-        display: none!important;
+        display: none;
     }
 
+    .headerNavbarBurger button {
+        font-size: 0.6rem;
+        padding: 0 0.2rem;
+    }
+
+    /* Body */
     .ContainerBackground {
         margin-left: 3rem;
     }
@@ -158,10 +178,9 @@ h2 {
     }
 
     .linkContactF {
-        font-size: 0.3rem;
-        margin-top: 0.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        font-size: 0.2rem;
+        margin-top: 0.2rem;
+        padding: 0;
     }
 
     .infoContact {
@@ -171,6 +190,7 @@ h2 {
 
     .infoProduction {
         font-size: 0.2rem;
+        margin-bottom: 1rem;
     }
 
     .infoProduction p {
@@ -192,9 +212,13 @@ h2 {
     @media (min-width: 576px) {
     /* Header Navbar */
     .containerImageLogo {
-        padding-top: 0.3rem;
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 0.4rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    .titleLetters {
+        padding-left: 0!important;
     }
 
     .titleLetters > li  {
@@ -215,12 +239,15 @@ h2 {
         margin-bottom: 0;
     }
 
-    .slogan p {
+    .slogan {
         font-size: 0.4rem;
+        padding-left: 0;
     }
 
     .containerNavbar {
-        margin-top: 1rem;
+        margin-top: 0.3rem;
+        display: flex;
+        justify-content: space-between;
     }
 
     .containerBreadcrumb {
@@ -229,7 +256,8 @@ h2 {
         margin-bottom: 0;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
+    .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
         font-size: 0.5rem;
         padding-left: 1.5rem;
     }
@@ -242,10 +270,15 @@ h2 {
         margin-right: 0!important;
     }
 
-    .headerNavbarBurger {
+    .headerNavbar {
         display: none;
     }
 
+    .headerNavbarBurger button {
+        font-size: 1rem;
+    }
+
+    /* Body */
     .ContainerBackground {
         margin-left: 3rem;
     }
@@ -256,16 +289,14 @@ h2 {
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
-    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
         font-size: 0.4rem;
         padding-left: 0.1rem;
     }
 
     .linkContactF {
-        font-size: 0.5rem;
+        font-size: 0.3rem;
         margin-top: 0.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     .infoContact {
@@ -275,6 +306,7 @@ h2 {
 
     .infoProduction {
         font-size: 0.3rem;
+        margin-bottom: 0.5rem;
     }
 
     .infoProduction p {
@@ -299,12 +331,16 @@ h2 {
         padding-right: 0;
     }
 
+    .titleLetters {
+        padding-left: 1.5rem!important;
+    }
+
     .titleLetters > li  {
         font-size: 2.1rem;
     }
 
     .containerArguments {
-        margin-top: 4rem;
+        margin-top: 1rem;
     }
 
     .arguments p {
@@ -312,8 +348,9 @@ h2 {
         margin-bottom: 0;
     }
 
-    .slogan p {
+    .slogan {
         font-size: 0.5rem;
+        padding-left: 1.2rem;
     }
 
     .containerNavbar {
@@ -327,7 +364,7 @@ h2 {
     }
 
     .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding-left: 0.3rem;
     }
 
@@ -343,35 +380,35 @@ h2 {
         display: none;
     }
 
+    /* Body */
     .ContainerBackground {
         margin-left: 4rem;
     }
 
     /* Footer Navbar */
     .footerNavbar {
-        padding-top: 0rem;
+        padding-top: 0;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
-    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
         font-size: 0.5rem;
         padding-left: 0.4rem;
     }
 
     .linkContactF {
         font-size: 0.5rem;
-        margin-top: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        margin-top: 0.5rem;
     }
 
     .infoContact {
         font-size: 0.5rem;
-        margin-top: 0.5rem;
+        margin-top: 0.2rem;
     }
 
     .infoProduction {
         font-size: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .infoProduction p {
@@ -395,12 +432,16 @@ h2 {
         padding-right: 0;
     }
 
+    .titleLetters {
+        padding-left: 1.5rem!important;
+    }
+
     .titleLetters > li  {
         font-size: 3rem;
     }
 
     .containerArguments {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .arguments p {
@@ -408,12 +449,13 @@ h2 {
         margin-bottom: 0;
     }
 
-    .slogan p {
+    .slogan {
         font-size: 0.7rem;
+        padding-left: 0.9rem;
     }
 
     .containerNavbar {
-        margin-top: 1rem;
+        margin-top: 0.3rem;
     }
 
     .containerBreadcrumb {
@@ -438,17 +480,18 @@ h2 {
         display: none;
     }
 
+    /* Body */
     .ContainerBackground {
         margin-left: 4rem;
     }
 
     /* Footer Navbar */
     .footerNavbar {
-        padding-top: 0.2rem;
+        padding-top: 0.1rem;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
-    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
         font-size: 0.7rem;
         padding-left: 0.6rem;
     }
@@ -456,17 +499,16 @@ h2 {
     .linkContactF {
         font-size: 0.7rem;
         margin-top: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
     }
 
     .infoContact {
         font-size: 0.6rem;
-        margin-top: 0.5rem;
+        margin-top: 0.3rem;
     }
 
     .infoProduction {
         font-size: 0.6rem;
+        margin-bottom: 1rem;
     }
 
     .infoProduction p {
@@ -490,12 +532,16 @@ h2 {
         padding-right: 0;
     }
 
+    .titleLetters {
+        padding-left: 1.5rem!important;
+    }
+
     .titleLetters > li  {
         font-size: 3.9rem;
     }
 
     .containerArguments {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .arguments p {
@@ -503,17 +549,18 @@ h2 {
         margin-bottom: 0;
     }
 
-    .slogan p {
+    .slogan {
         font-size: 0.9rem;
+        padding-left: 0.9rem;
     }
 
     .containerNavbar {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .containerBreadcrumb {
         margin-left: 6rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .headerNavbar > li {
@@ -521,7 +568,7 @@ h2 {
     }
 
     .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding-left: 0.6rem;
     }
 
@@ -533,26 +580,25 @@ h2 {
         display: none;
     }
 
+    /* Body */
     .ContainerBackground {
         margin-left: 6rem;
     }
 
     /* Footer Navbar */
     .footerNavbar {
-        padding-top: 1rem;
+        padding-top: 0.5rem;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
-    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
         font-size: 0.9rem;
         padding-left: 0.8rem;
     }
 
     .linkContactF {
         font-size: 0.9rem;
-        margin-top: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        margin-top: 1.5rem;
     }
 
     .infoContact {
@@ -562,10 +608,11 @@ h2 {
 
     .infoProduction {
         font-size: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     .infoProduction p {
-        margin-top: 1.2rem;
+        margin-top: 0.3rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
@@ -585,6 +632,10 @@ h2 {
         padding-right: 0;
     }
 
+    .titleLetters {
+        padding-left: 1.5rem!important;
+    }
+
     .titleLetters > li  {
         font-size: 5.8rem;
     }
@@ -600,8 +651,9 @@ h2 {
         padding-bottom: 3rem;
     }
 
-    .slogan p {
+    .slogan {
         font-size: 1.2rem;
+        padding-left: 0.8rem;
     }
 
     .containerNavbar {
@@ -614,7 +666,7 @@ h2 {
     }
 
     .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding-left: 1.5rem;
     }
 
@@ -623,29 +675,28 @@ h2 {
     }
 
     .headerNavbarBurger {
-        display: none!important;
+        display: none;
     }
 
+    /* Body */
     .ContainerBackground {
         margin-left: 8rem;
     }
 
     /* Footer Navbar */
     .footerNavbar {
-        padding-top: 1rem;
+        padding-top: 0.8rem;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
-    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF, .linkContactF {
+    .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
         font-size: 1.2rem;
-        padding-left: 2rem;
+        padding-left: 1.5rem;
     }
 
     .linkContactF {
         font-size: 1.2rem;
         margin-top: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
     }
 
     .infoContact {
@@ -655,6 +706,7 @@ h2 {
 
     .infoProduction {
         font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     .infoProduction p {
