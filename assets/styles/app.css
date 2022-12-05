@@ -2,9 +2,9 @@ body {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     }
 
-h2 {
+/* h2 {
     font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
-    }
+    } */
 
     /* Style */
 
@@ -55,25 +55,33 @@ h2 {
         padding: 0.3rem;
     }
 
+    .headerNavbar {
+        display: block;
+    }
+
     /* Navbar Burger */
     .dropdown-menu li {
         position: relative;
     }
 
     .dropdown-menu .dropdown-submenu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: -7px;
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
     }
 
     .dropdown-menu .dropdown-submenu-left {
-    right: 100%;
-    left: auto;
+        right: 100%;
+        left: auto;
     }
 
     .dropdown-menu > li:hover > .dropdown-submenu {
-    display: block;
+        display: block;
+    }
+
+    .headerNavbarBurger {
+        display: block;
     }
 
 /* Footer style */
@@ -103,9 +111,9 @@ h2 {
     }
 
 /* Media queries Bootstrap */
-    /* Extra small devices (portrait phones, 300px and up) */
-    @media (min-width: 300px) {
-    /* Header Navbar */
+    /* Extra small devices (portrait phones, 575px and down) */
+    @media (max-width: 575px) {
+
     .containerImageLogo {
         padding-top: 0.2rem;
         padding-left: 0.4rem;
@@ -159,7 +167,7 @@ h2 {
     }
 
     .headerNavbar {
-        display: none;
+        display: none!important;
     }
 
     .headerNavbarBurger button {
@@ -174,7 +182,11 @@ h2 {
 
     /* Footer Navbar */
     .footerNavbar {
-        display: none;
+        display: none!important;
+    }
+
+    .list-inline {
+        margin: 0;
     }
 
     .linkContactF {
@@ -206,10 +218,8 @@ h2 {
 
     }
 
-    /* Small devices (landscape phones, 576px and up)
-    si taille d'écran supérieure à 576px
-    */
-    @media (min-width: 576px) {
+    /* Small devices (landscape phones, 767px and 576px) */
+    @media (max-width: 767px) and (min-width: 576px) {
     /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.4rem;
@@ -259,7 +269,7 @@ h2 {
     .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
     .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
         font-size: 0.5rem;
-        padding-left: 1.5rem;
+        padding-left: 0.3rem;
     }
 
     .list-inline {
@@ -270,8 +280,8 @@ h2 {
         margin-right: 0!important;
     }
 
-    .headerNavbar {
-        display: none;
+    .headerNavbarBurger {
+        display: none!important;
     }
 
     .headerNavbarBurger button {
@@ -288,9 +298,13 @@ h2 {
         padding-top: 0;
     }
 
+    .list-inline {
+        margin: 0;
+    }
+
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
     .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
-        font-size: 0.4rem;
+        font-size: 0.3rem;
         padding-left: 0.1rem;
     }
 
@@ -322,8 +336,8 @@ h2 {
 
     }
 
-    /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) {
+    /* Medium devices (tablets, 991px and 768px) */
+    @media (max-width: 991px) and (min-width: 768px) {
     /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
@@ -363,7 +377,8 @@ h2 {
         margin-bottom: 0;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
+    .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
         font-size: 0.6rem;
         padding-left: 0.3rem;
     }
@@ -377,7 +392,7 @@ h2 {
     }
 
     .headerNavbarBurger {
-        display: none;
+        display: none!important;
     }
 
     /* Body */
@@ -388,6 +403,10 @@ h2 {
     /* Footer Navbar */
     .footerNavbar {
         padding-top: 0;
+    }
+
+    .list-inline {
+        margin: 0;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
@@ -415,6 +434,7 @@ h2 {
         margin-top: 0.2rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        margin-bottom: 0;
     }
 
     .infoProduction img {
@@ -423,8 +443,8 @@ h2 {
 
     }
 
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) {
+    /* Large devices (desktops, 1229px and 992px) */
+    @media (max-width: 1229px) and (min-width: 992px) {
     /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
@@ -455,7 +475,7 @@ h2 {
     }
 
     .containerNavbar {
-        margin-top: 0.3rem;
+        margin-top: 0;
     }
 
     .containerBreadcrumb {
@@ -467,7 +487,8 @@ h2 {
         font-size: 0.1rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
+    .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
         font-size: 0.8rem;
         padding-left: 0.6rem;
     }
@@ -477,7 +498,7 @@ h2 {
     }
 
     .headerNavbarBurger {
-        display: none;
+        display: none!important;
     }
 
     /* Body */
@@ -488,6 +509,10 @@ h2 {
     /* Footer Navbar */
     .footerNavbar {
         padding-top: 0.1rem;
+    }
+
+    .list-inline {
+        margin: 0;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
@@ -515,6 +540,7 @@ h2 {
         margin-top: 0.2rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        margin-bottom: 0;
     }
 
     .infoProduction img {
@@ -523,8 +549,8 @@ h2 {
 
     }
 
-    /* Extra large devices (large desktops, 1230px and up) */
-    @media (min-width: 1230px) {
+    /* Extra large devices (large desktops, 1649px and 1230px) */
+    @media (max-width: 1649px) and (min-width: 1230px) {
     /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
@@ -555,7 +581,7 @@ h2 {
     }
 
     .containerNavbar {
-        margin-top: 0.5rem;
+        margin-top: 0;
     }
 
     .containerBreadcrumb {
@@ -567,7 +593,8 @@ h2 {
         font-size: 10rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
+    .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
         font-size: 1.1rem;
         padding-left: 0.6rem;
     }
@@ -577,7 +604,7 @@ h2 {
     }
 
     .headerNavbarBurger {
-        display: none;
+        display: none!important;
     }
 
     /* Body */
@@ -588,6 +615,10 @@ h2 {
     /* Footer Navbar */
     .footerNavbar {
         padding-top: 0.5rem;
+    }
+
+    .list-inline {
+        margin: 0;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
@@ -612,9 +643,10 @@ h2 {
     }
 
     .infoProduction p {
-        margin-top: 0.3rem;
+        margin-top: 0.2rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        margin-bottom: 0;
     }
 
     .infoProduction img {
@@ -657,7 +689,7 @@ h2 {
     }
 
     .containerNavbar {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .containerBreadcrumb {
@@ -665,8 +697,9 @@ h2 {
         font-size: 1rem;
     }
 
-    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout {
-        font-size: 1.4rem;
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
+    .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
+        font-size: 1.3rem;
         padding-left: 1.5rem;
     }
 
@@ -675,7 +708,7 @@ h2 {
     }
 
     .headerNavbarBurger {
-        display: none;
+        display: none!important;
     }
 
     /* Body */
@@ -686,6 +719,10 @@ h2 {
     /* Footer Navbar */
     .footerNavbar {
         padding-top: 0.8rem;
+    }
+
+    .list-inline {
+        margin: 0;
     }
 
     .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
@@ -710,9 +747,10 @@ h2 {
     }
 
     .infoProduction p {
-        margin-top: 1.2rem;
+        margin-top: 0.2rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        margin-bottom: 0;
     }
 
     .infoProduction img {
