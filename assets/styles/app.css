@@ -84,6 +84,15 @@ body {
         display: block;
     }
 
+/* Body Homepage style */
+.imageBabyRoom {
+    /* background-image: url('{{ asset('/public/build/images/ ~ baby-room.12505822.png')}}'); */
+    /* background-image: url('{{asset('uploads/images/' ~ post.image)}}') */
+    background-image: url('/public/build/images/baby-room.12505822.png ');
+    background-repeat: no-repeat;
+    min-height: 93vh;
+}
+
 /* Footer style */
 .contact p {
     font-size: 0.8rem;
