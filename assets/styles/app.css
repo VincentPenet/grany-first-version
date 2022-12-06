@@ -90,8 +90,63 @@ body {
     /* background-image: url('{{asset('uploads/images/' ~ post.image)}}') */
     background-image: url('/public/build/images/baby-room.12505822.png ');
     background-repeat: no-repeat;
+    position : relative;
     min-height: 93vh;
 }
+
+    /* Drawing button slippers - Chaussons */
+    .linkSlippersBrownDrawing {
+        width: 5%;
+        height: auto;
+        position: absolute;
+        left: 140px;
+        top: 245px;
+    }
+
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing {
+        width: 8%;
+        height: auto;
+        position: absolute;
+        left: 20px;
+        top: 550px;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing {
+        width: 10%;
+        height: auto;
+        position: absolute;
+        left: 300px;
+        top: 255px;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .linkDrawingBoardDrawing {
+        width: 14%;
+        height: auto;
+        position: absolute;
+        left: 450px;
+        top: 300px;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing {
+        width: 10%;
+        height: auto;
+        position: absolute;
+        left: 450px;
+        top: 500px;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing {
+        width: 10%;
+        height: auto;
+        position: absolute;
+        left: 600px;
+        top: 300px;
+    }
 
 /* Footer style */
 .contact p {
