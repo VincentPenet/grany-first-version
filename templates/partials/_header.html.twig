@@ -63,17 +63,17 @@
         <div class="containerNavbar row text-capitalize">
 
             <!-- breadcrumb -->
-            <p class="containerBreadcrumb col-2 offset-1 text-muted fst-italic text-decoration-underline">{{breadcrumb}}</p>
+            <p class="containerBreadcrumb col-2 offset-1 text-muted fst-italic text-decoration-underline" aria-label="breadcrumb">{{breadcrumb}}</p>
 
             <!-- Classic inline Navbar -->
-            <nav class="headerNavbar col-9 d-flex align-self-end justify-content-end">
+            <nav class="headerNavbar col-9 d-flex align-self-end justify-content-end" role="navigation" aria-label="Menu principal">
                 <ul class="list-inline">
                     <li class="list-inline-item"><a class="linkHome text-dark" href="#">accueil</a></li>
 
                     <!-- Dropdown link / Catalogue-->
                     <li class="list-inline-item nav-item dropdown"></li>
-                        <a class="linkCatalogue text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">catalogue</a>
-                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="linkCatalogue text-dark dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" role="navigation" aria-label="Menu du catalogue" aria-haspopup="true" aria-controls="catalogueHeader-id">catalogue</a>
+                        <ul id="catalogueHeader-id" class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="linkPresentation dropdown-item text-dark" href="#">présentation</a></li>
                             <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
                             <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
@@ -92,8 +92,8 @@
 
                     <!-- Dropdown link / About-->
                     <li class="list-inline-item nav-item dropdown">
-                        <a class="linkAbout text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">à propos</a>
-                        <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="linkAbout text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" role="navigation" aria-label="Menu à propos" aria-haspopup="true" aria-controls="aboutHeader-id">à propos</a>
+                        <ul id=="aboutHeader-id" class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="linkAboutMe dropdown-item text-dark" href="#">à propos de moi</a></li>
                             <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>
                             <li><a class="linkPolicy dropdown-item text-dark" href="#">politique de confidentialité</a></li>
@@ -103,17 +103,17 @@
             </nav>
 
             <!-- Menu burger / Mobile version -->
-            <nav class="headerNavbarBurger col-1 d-flex align-self-end justify-content-end dropstart">
-                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <nav class="headerNavbarBurger col-1 d-flex align-self-end justify-content-end dropstart" role="navigation" aria-label="Menu principal">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="menu-id">
                 <i class="fa-solid fa-bars"></i></button>
 
-                <ul class="list-unstyled dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <ul id="menu-id" class="list-unstyled dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="linkHome text-dark dropdown-item" href="#">accueil</a></li>
 
                     <!-- Dropdown link / Catalogue-->
                     <li class="dropdown">
-                        <a class="linkCatalogue text-dark dropdown-item" href="#">catalogue</a>
-                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left text-capitalize">
+                        <a class="linkCatalogue text-dark dropdown-item" href="#" role="navigation" aria-label="Menu du catalogue" aria-expanded="false" aria-haspopup="true" aria-controls="catalogue-id">catalogue</a>
+                        <ul id="catalogue-id" class="dropdown-menu dropdown-submenu dropdown-submenu-left text-capitalize">
                             <li><a class="linkPresentation dropdown-item text-dark" href="#">présentation</a></li>
                             <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
                             <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
@@ -132,8 +132,8 @@
 
                     <!-- Dropdown link / About-->
                     <li class="dropdown">
-                        <a class="linkAbout text-dark dropdown-item" href="#">à propos</a>
-                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left text-capitalize">
+                        <a class="linkAbout text-dark dropdown-item" href="#" role="navigation" aria-label="Menu à propos" aria-expanded="false" aria-haspopup="true" aria-controls="about-id">à propos</a>
+                        <ul id="about-id" class="dropdown-menu dropdown-submenu dropdown-submenu-left text-capitalize">
                             <li><a class="linkAboutMe dropdown-item text-dark" href="#">à propos de moi</a></li>
                             <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>
                             <li><a class="linkPolicy dropdown-item text-dark" href="#">politique de confidentialité</a></li>

@@ -88,7 +88,7 @@ body {
 .imageBabyRoom {
     /* background-image: url('{{ asset('/public/build/images/ ~ baby-room.12505822.png')}}'); */
     /* background-image: url('{{asset('uploads/images/' ~ post.image)}}') */
-    background-image: url('/public/build/images/baby-room.12505822.png ');
+    background-image: url('/public/images/decor-homepage/baby-room.png');
     background-repeat: no-repeat;
     position : relative;
     min-height: 93vh;
@@ -96,11 +96,11 @@ body {
 
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing {
-        width: 5%;
+        width: 4.5%;
         height: auto;
         position: absolute;
         left: 140px;
-        top: 245px;
+        top: 210px;
     }
 
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -108,44 +108,113 @@ body {
         width: 8%;
         height: auto;
         position: absolute;
-        left: 20px;
-        top: 550px;
+        left: 15px;
+        top: 515px;
     }
 
     /* Drawing button floor mat - Tapis de sol */
     .linkFloorMatDrawing {
-        width: 10%;
+        width: 18%;
         height: auto;
         position: absolute;
-        left: 300px;
-        top: 255px;
+        left: 160px;
+        top: 400px;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRabbitRattleDrawing {
+        width: 5.5%;
+        height: auto;
+        position: absolute;
+        left: 250px;
+        top: 670px;
     }
 
     /* Drawing button drawing board - Tableau dessin */
-    .linkDrawingBoardDrawing {
+    .DrawingBoardDrawing {
         width: 14%;
         height: auto;
         position: absolute;
-        left: 450px;
+        left: 460px;
+        top: 225px;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        position: absolute;
+        left: 515px;
         top: 300px;
+        transform: rotate(-3.5deg);
+        font-weight: bold;
+        color: red;
     }
 
     /* Drawing button soft toy - Amigurumi */
     .linkSoftToyDrawing {
-        width: 10%;
+        width: 8%;
         height: auto;
         position: absolute;
         left: 450px;
-        top: 500px;
+        top: 620px;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing {
+        width: 7%;
+        height: auto;
+        position: absolute;
+        left: 750px;
+        top: 460px;
     }
 
     /* Drawing button cradle - Berceau */
     .linkCradleDrawing {
-        width: 10%;
+        position: absolute;
+        left: 870px;
+        top: 215px;
+    }
+
+    /* Image cat - Chat */
+    .catgDrawing {
+        width: 4%;
         height: auto;
         position: absolute;
-        left: 600px;
-        top: 300px;
+        left: 1020px;
+        top: 720px;
+    }
+
+    /* Drawing button mobile - Mobile */
+    .linkMobileDrawing {
+        position: absolute;
+        left: 1150px;
+        top: 20px;
+    }
+
+    /* Drawing button ball - Balle */
+    .linkBallDrawing {
+        width: 4.5%;
+        height: auto;
+        position: absolute;
+        left: 1400px;
+        top: 700px;
+    }
+
+    /* Drawing button toy cubes - Cubes */
+    .linkToyCubesDrawing {
+        width: 6%;
+        height: auto;
+        position: absolute;
+        left: 1550px;
+        top: 600px;
+    }
+
+    /* Drawing button rattle - Hochet */
+    .linkRattleDrawing {
+        width: 4%;
+        height: auto;
+        position: absolute;
+        left: 1450px;
+        top: 405px;
     }
 
 /* Footer style */
