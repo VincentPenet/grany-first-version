@@ -217,6 +217,24 @@ body {
         top: 405px;
     }
 
+    .linkSlippersBrownDrawing:hover, .linkRabbitComforterDrawing:hover, .linkFloorMatDrawing:hover, .linkRabbitRattleDrawing:hover, .linkSoftToyDrawing:hover,
+    .linkMobileDrawing:hover, .linkBallDrawing:hover, .linkToyCubesDrawing:hover, .linkRattleDrawing:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    .linkCradleDrawing:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .NoveltiesText:hover {
+        background-color: rgb(196, 41, 160);
+        border-radius: 0.5rem;
+        color: white!important;
+        font-weight: 800;
+    }
+
 /* Footer style */
 .contact p {
     font-size: 0.8rem;
