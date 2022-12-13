@@ -100,13 +100,12 @@ body {
 
 
     /* Drawing button rabbit comforter - Doudou lapin */
-    /* .linkRabbitComforterDrawing {
-        width: 8%;
-        height: auto;
+    .linkRabbitComforterDrawing img {
         position: absolute;
-        left: 15px;
-        top: 515px;
-    } */
+        left: 2%;
+        top: 54%;
+        height: auto;
+    }
 
     /* Drawing button floor mat - Tapis de sol */
     /* .linkFloorMatDrawing {
@@ -327,8 +326,14 @@ body {
         margin-left: 3rem;
     }
 
+    /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 7px;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing img {
+        width: 20px;
     }
 
     /* Footer Navbar */
@@ -444,8 +449,14 @@ body {
         margin-left: 3rem;
     }
 
+    /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 14px;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing img {
+        width: 30px;
     }
 
     /* Footer Navbar */
@@ -555,8 +566,14 @@ body {
         margin-left: 4rem;
     }
 
+    /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 20px;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing img {
+        width: 40px;
     }
 
     /* Footer Navbar */
@@ -665,8 +682,14 @@ body {
         margin-left: 4rem;
     }
 
+    /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 30px;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing img {
+        width: 50px;
     }
 
     /* Footer Navbar */
@@ -775,8 +798,14 @@ body {
         margin-left: 6rem;
     }
 
+    /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
-        width: 40px;
+        width: 38px;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing img {
+        width: 90px;
     }
 
     /* Footer Navbar */
@@ -883,8 +912,14 @@ body {
         margin-left: 8rem;
     }
 
+    /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 55px;
+    }
+
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing img {
+        width: 110px;
     }
 
     /* Footer Navbar */
