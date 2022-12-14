@@ -93,37 +93,31 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         position: absolute;
-        left: 10%;
-        top: 23%;
         height: auto;
+        left: 10%;
     }
 
 
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         position: absolute;
-        left: 2%;
-        top: 54%;
         height: auto;
+        left: 3%;
     }
 
     /* Drawing button floor mat - Tapis de sol */
-    /* .linkFloorMatDrawing {
-        width: 18%;
-        height: auto;
+    .linkFloorMatDrawing img {
         position: absolute;
-        left: 160px;
-        top: 400px;
-    } */
+        height: auto;
+        left: 10%;
+    }
 
     /* Drawing button rabbit rattle - Hochet lapin */
-    /* .linkRabbitRattleDrawing {
-        width: 5.5%;
-        height: auto;
+    .linkRabbitRattleDrawing img {
         position: absolute;
-        left: 250px;
-        top: 670px;
-    } */
+        height: auto;
+        left: 25%;
+    }
 
     /* Drawing button drawing board - Tableau dessin */
     /* .DrawingBoardDrawing {
@@ -212,13 +206,14 @@ body {
         top: 405px;
     } */
 
-    .linkSlippersBrownDrawing:hover, .linkRabbitComforterDrawing:hover, .linkFloorMatDrawing:hover, .linkRabbitRattleDrawing:hover, .linkSoftToyDrawing:hover,
-    .linkMobileDrawing:hover, .linkBallDrawing:hover, .linkToyCubesDrawing:hover, .linkRattleDrawing:hover {
+    .linkSlippersBrownDrawing img:hover, .linkRabbitRattleDrawing img:hover,
+    .linkSoftToyDrawing img:hover, .linkMobileDrawing img:hover, .linkBallDrawing img:hover, .linkToyCubesDrawing img:hover,
+    .linkRattleDrawing img:hover {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    .linkCradleDrawing:hover {
+    .linkCradleDrawing img:hover, .linkFloorMatDrawing img:hover, .linkRabbitComforterDrawing img:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
@@ -329,11 +324,25 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 7px;
+        top: 20%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         width: 20px;
+        top: 43%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing img {
+        width: 60px;
+        top: 37%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRabbitRattleDrawing img {
+        width: 12px;
+        top: 45%;
     }
 
     /* Footer Navbar */
@@ -452,11 +461,25 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 14px;
+        top: 18%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         width: 30px;
+        top: 45%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing img {
+        width: 100px;
+        top: 34%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRabbitRattleDrawing img {
+        width: 25px;
+        top: 50%;
     }
 
     /* Footer Navbar */
@@ -569,11 +592,25 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 20px;
+        top: 20%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         width: 40px;
+        top: 48%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing img {
+        width: 135px;
+        top: 37%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRabbitRattleDrawing img {
+        width: 30px;
+        top: 55%;
     }
 
     /* Footer Navbar */
@@ -685,11 +722,25 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 30px;
+        top: 20%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         width: 50px;
+        top: 50%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing img {
+        width: 150px;
+        top: 40%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRabbitRattleDrawing img {
+        width: 33px;
+        top: 55%;
     }
 
     /* Footer Navbar */
@@ -801,11 +852,25 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 38px;
+        top: 21%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         width: 90px;
+        top: 50%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing img {
+        width: 200px;
+        top: 41%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRabbitRattleDrawing img {
+        width: 60px;
+        top: 60%;
     }
 
     /* Footer Navbar */
@@ -915,11 +980,25 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 55px;
+        top: 21%;
     }
 
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         width: 110px;
+        top: 55%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing img {
+        width: 280px;
+        top: 44%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRabbitRattleDrawing img {
+        width: 70px;
+        top: 60%;
     }
 
     /* Footer Navbar */
