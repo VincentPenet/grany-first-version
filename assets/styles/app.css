@@ -97,7 +97,6 @@ body {
         left: 10%;
     }
 
-
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
         position: absolute;
@@ -109,34 +108,31 @@ body {
     .linkFloorMatDrawing img {
         position: absolute;
         height: auto;
-        left: 10%;
+        left: 9%;
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
         position: absolute;
         height: auto;
-        left: 25%;
+        left: 22%;
     }
 
     /* Drawing button drawing board - Tableau dessin */
-    /* .DrawingBoardDrawing {
-        width: 14%;
+    .DrawingBoardDrawing img {
         height: auto;
         position: absolute;
-        left: 460px;
-        top: 225px;
-    } */
+        left: 28%;
+    }
 
     /* Text drawing board - Texte Nouveautés */
-    /* .NoveltiesText {
+    .NoveltiesText {
         position: absolute;
-        left: 515px;
-        top: 300px;
+        margin-bottom: 0;
         transform: rotate(-3.5deg);
         font-weight: bold;
         color: red;
-    } */
+    }
 
     /* Drawing button soft toy - Amigurumi */
     /* .linkSoftToyDrawing {
@@ -206,29 +202,22 @@ body {
         top: 405px;
     } */
 
-    .linkSlippersBrownDrawing img:hover, .linkRabbitRattleDrawing img:hover,
-    .linkSoftToyDrawing img:hover, .linkMobileDrawing img:hover, .linkBallDrawing img:hover, .linkToyCubesDrawing img:hover,
-    .linkRattleDrawing img:hover {
+    .linkSlippersBrownDrawing img:hover, .linkRabbitRattleDrawing img:hover, .linkSoftToyDrawing img:hover,
+    .linkMobileDrawing img:hover, .linkBallDrawing img:hover, .linkToyCubesDrawing img:hover, .linkRattleDrawing img:hover {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    .linkCradleDrawing img:hover, .linkFloorMatDrawing img:hover, .linkRabbitComforterDrawing img:hover {
+    .linkCradleDrawing img:hover, .linkFloorMatDrawing img:hover, .linkRabbitComforterDrawing img:hover,
+    .linkDrawingBoardDrawing img:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
 
-    .NoveltiesText:hover {
-        background-color: rgb(196, 41, 160);
-        border-radius: 0.5rem;
-        color: white!important;
-        font-weight: 800;
-    }
-
 /* Footer style */
-.contact p {
-    font-size: 0.8rem;
-}
+    .contact p {
+        font-size: 0.8rem;
+    }
 
     /* Footer Navbar */
     .linkPresentationF:hover, .linkSoftToysF:hover, .linkComfortersF:hover, .linkRattlesF:hover, .linkToysF:hover, .linkFloorMatsF:hover, .linkBlanketsF:hover,
@@ -252,8 +241,8 @@ body {
     }
 
 /* Media queries Bootstrap */
-    /* Extra small devices (portrait phones, 575px and down) */
-    @media (max-width: 575px) {
+    /* Extra small devices (portrait phones, 479px and down) */
+    @media (max-width: 479px) {
 
     .containerImageLogo {
         padding-top: 0.2rem;
@@ -317,14 +306,126 @@ body {
     }
 
     /* Body */
-    .ContainerBackground {
+    .imageBabyRoomEmpty {
+        display: none;
+    }
+    .linkSlippersBrownDrawing img, .linkRabbitRattleDrawing img, .linkDrawingBoardDrawing img, .NoveltiesText,
+    .linkSoftToyDrawing img, .linkMobileDrawing img, .linkBallDrawing img, .linkToyCubesDrawing img,
+    .linkRattleDrawing img, .linkCradleDrawing img, .linkFloorMatDrawing img, .linkRabbitComforterDrawing img {
+        display: none;
+    }
+
+    /* Footer Navbar */
+    .footerNavbar {
+        display: none!important;
+    }
+
+    .list-inline {
+        margin: 0;
+    }
+
+    .linkContactF {
+        font-size: 0.2rem;
+        margin-top: 0.2rem;
+        padding: 0;
+    }
+
+    .infoContact {
+        font-size: 0.2rem;
+        margin-top: 0.1rem;
+    }
+
+    .infoProduction {
+        font-size: 0.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .infoProduction p {
+        margin-top: 0.2rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        margin-bottom: 0;
+    }
+
+    .infoProduction img {
+        width: 2%;
+    }
+
+    }
+
+    /* Small devices (landscape phones, 575px and 480px) */
+    @media (max-width: 575px) and (min-width: 480px) {
+
+    .containerImageLogo {
+        padding-top: 0.2rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+    .titleLetters {
+        padding-left: 0!important;
+    }
+
+    .titleLetters > li  {
+        font-size: 0.7rem;
+        padding-left: 0;
+    }
+
+    .containerArguments {
+        margin-top: 0;
+    }
+
+    .arguments p {
+        font-size: 0.2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .slogan {
+        font-size: 0.2rem;
+        padding-left: 0;
+    }
+
+    .containerNavbar {
+        margin-top: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .containerBreadcrumb {
         margin-left: 3rem;
+        font-size: 0.3rem;
+        margin-bottom: 0;
+    }
+
+    .linkHome, .linkCatalogue, .linkNovelties, .linkContact, .linkAbout, .linkPresentation, .linkSoftToys, .linkComforters, .linkRattles,
+    .linkToys, .linkFloorMats, .linkBlankets, .linkGrannys, .linkSlippers, .linkAccessories, .linkAboutMe, .linkCleaning, .linkPolicy {
+        font-size: 0.3rem;
+        padding-left: 1.5rem;
+    }
+
+    .list-inline-item {
+        margin-right: 0!important;
+    }
+
+    .headerNavbar {
+        display: none!important;
+    }
+
+    .headerNavbarBurger button {
+        font-size: 0.6rem;
+        padding: 0 0.2rem;
+    }
+
+    /* Body */
+    .imageBabyRoomFull {
+        display: none;
     }
 
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
-        width: 7px;
-        top: 20%;
+        width: 11px;
+        top: 18%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -343,6 +444,19 @@ body {
     .linkRabbitRattleDrawing img {
         width: 12px;
         top: 45%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing img {
+        width: 55px;
+        top: 24%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.2rem;
+        left: 31%;
+        top: 30%;
     }
 
     /* Footer Navbar */
@@ -454,8 +568,8 @@ body {
     }
 
     /* Body */
-    .ContainerBackground {
-        margin-left: 3rem;
+    .imageBabyRoomFull {
+        display: none;
     }
 
     /* Drawing button slippers - Chaussons */
@@ -480,6 +594,19 @@ body {
     .linkRabbitRattleDrawing img {
         width: 25px;
         top: 50%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing img {
+        width: 90px;
+        top: 24%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.4rem;
+        left: 32%;
+        top: 31%;
     }
 
     /* Footer Navbar */
@@ -585,8 +712,8 @@ body {
     }
 
     /* Body */
-    .ContainerBackground {
-        margin-left: 4rem;
+    .imageBabyRoomFull {
+        display: none;
     }
 
     /* Drawing button slippers - Chaussons */
@@ -603,7 +730,7 @@ body {
 
     /* Drawing button floor mat - Tapis de sol */
     .linkFloorMatDrawing img {
-        width: 135px;
+        width: 125px;
         top: 37%;
     }
 
@@ -611,6 +738,19 @@ body {
     .linkRabbitRattleDrawing img {
         width: 30px;
         top: 55%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing img {
+        width: 90px;
+        top: 24%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.4rem;
+        left: 31%;
+        top: 30%;
     }
 
     /* Footer Navbar */
@@ -715,8 +855,8 @@ body {
     }
 
     /* Body */
-    .ContainerBackground {
-        margin-left: 4rem;
+    .imageBabyRoomFull {
+        display: none;
     }
 
     /* Drawing button slippers - Chaussons */
@@ -741,6 +881,19 @@ body {
     .linkRabbitRattleDrawing img {
         width: 33px;
         top: 55%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing img {
+        width: 125px;
+        top: 24%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.6rem;
+        left: 31%;
+        top: 31%;
     }
 
     /* Footer Navbar */
@@ -845,8 +998,8 @@ body {
     }
 
     /* Body */
-    .ContainerBackground {
-        margin-left: 6rem;
+    .imageBabyRoomFull {
+        display: none;
     }
 
     /* Drawing button slippers - Chaussons */
@@ -869,8 +1022,21 @@ body {
 
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
-        width: 60px;
+        width: 55px;
         top: 60%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing img {
+        width: 160px;
+        top: 24%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.8rem;
+        left: 31%;
+        top: 31%;
     }
 
     /* Footer Navbar */
@@ -973,14 +1139,14 @@ body {
     }
 
     /* Body */
-    .ContainerBackground {
-        margin-left: 8rem;
+    .imageBabyRoomFull {
+        display: none;
     }
 
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
-        width: 55px;
-        top: 21%;
+        width: 54px;
+        top: 22%;
     }
 
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -997,8 +1163,21 @@ body {
 
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
-        width: 70px;
-        top: 60%;
+        width: 65px;
+        top: 65%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing img {
+        width: 210px;
+        top: 24%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 1rem;
+        left: 31%;
+        top: 31%;
     }
 
     /* Footer Navbar */
