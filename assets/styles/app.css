@@ -120,8 +120,8 @@ body {
 
     /* Drawing button drawing board - Tableau dessin */
     .DrawingBoardDrawing img {
-        height: auto;
         position: absolute;
+        height: auto;
         left: 28%;
     }
 
@@ -135,32 +135,26 @@ body {
     }
 
     /* Drawing button soft toy - Amigurumi */
-    /* .linkSoftToyDrawing {
-        width: 8%;
-        height: auto;
+    .linkSoftToyDrawing img {
         position: absolute;
-        left: 450px;
-        top: 620px;
-    } */
+        height: auto;
+        left: 33%;
+    }
 
     /* Drawing dog - Bingo */
-    /* .dogDrawing {
-        width: 7%;
-        height: auto;
+    .dogDrawing img {
         position: absolute;
-        left: 750px;
-        top: 460px;
-    } */
+        height: auto;
+    }
 
     /* Drawing button cradle - Berceau */
-    /* .linkCradleDrawing {
+    .linkCradleDrawing img {
         position: absolute;
-        left: 870px;
-        top: 215px;
-    } */
+        height: auto;
+    }
 
     /* Image cat - Chat */
-    /* .catgDrawing {
+    /* .catgDrawing img {
         width: 4%;
         height: auto;
         position: absolute;
@@ -210,8 +204,8 @@ body {
 
     .linkCradleDrawing img:hover, .linkFloorMatDrawing img:hover, .linkRabbitComforterDrawing img:hover,
     .linkDrawingBoardDrawing img:hover {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
     }
 
 /* Footer style */
@@ -310,8 +304,8 @@ body {
         display: none;
     }
     .linkSlippersBrownDrawing img, .linkRabbitRattleDrawing img, .linkDrawingBoardDrawing img, .NoveltiesText,
-    .linkSoftToyDrawing img, .linkMobileDrawing img, .linkBallDrawing img, .linkToyCubesDrawing img,
-    .linkRattleDrawing img, .linkCradleDrawing img, .linkFloorMatDrawing img, .linkRabbitComforterDrawing img {
+    .linkSoftToyDrawing img, .linkCradleDrawing img, .dogDrawing img, .catgDrawing img, .linkMobileDrawing img, .linkBallDrawing img, .linkToyCubesDrawing img,
+    .linkRattleDrawing img, .linkFloorMatDrawing img, .linkRabbitComforterDrawing img {
         display: none;
     }
 
@@ -425,38 +419,58 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 11px;
-        top: 18%;
+        top: 16%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
     .linkRabbitComforterDrawing img {
-        width: 20px;
-        top: 43%;
+        width: 30px;
+        top: 40%;
     }
 
     /* Drawing button floor mat - Tapis de sol */
     .linkFloorMatDrawing img {
-        width: 60px;
-        top: 37%;
+        width: 78px;
+        top: 32%;
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
-        width: 12px;
+        width: 18px;
         top: 45%;
     }
 
     /* Drawing button drawing board - Tableau dessin */
     .DrawingBoardDrawing img {
         width: 55px;
-        top: 24%;
+        top: 20%;
     }
 
     /* Text drawing board - Texte Nouveautés */
     .NoveltiesText {
         font-size: 0.2rem;
         left: 31%;
-        top: 30%;
+        top: 26%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing img {
+        width: 28px;
+        top: 42%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing img {
+        width: 30px;
+        left: 44%;
+        top: 35%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing img {
+        width: 125px;
+        left: 52%;
+        top: 18%;
     }
 
     /* Footer Navbar */
@@ -497,8 +511,8 @@ body {
 
     }
 
-    /* Small devices (landscape phones, 767px and 576px) */
-    @media (max-width: 767px) and (min-width: 576px) {
+    /* Small devices (landscape phones, 700px and 576px) */
+    @media (max-width: 700px) and (min-width: 576px) {
     /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.4rem;
@@ -575,7 +589,7 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 14px;
-        top: 18%;
+        top: 16%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -586,19 +600,19 @@ body {
 
     /* Drawing button floor mat - Tapis de sol */
     .linkFloorMatDrawing img {
-        width: 100px;
+        width: 90px;
         top: 34%;
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
         width: 25px;
-        top: 50%;
+        top: 53%;
     }
 
     /* Drawing button drawing board - Tableau dessin */
     .DrawingBoardDrawing img {
-        width: 90px;
+        width: 88px;
         top: 24%;
     }
 
@@ -607,6 +621,26 @@ body {
         font-size: 0.4rem;
         left: 32%;
         top: 31%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing img {
+        width: 40px;
+        top: 55%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing img {
+        width: 40px;
+        left: 47%;
+        top: 45%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing img {
+        width: 150px;
+        left: 55%;
+        top: 21%;
     }
 
     /* Footer Navbar */
@@ -652,8 +686,8 @@ body {
 
     }
 
-    /* Medium devices (tablets, 991px and 768px) */
-    @media (max-width: 991px) and (min-width: 768px) {
+    /* Medium devices (tablets, 991px and 701px) */
+    @media (max-width: 991px) and (min-width: 701px) {
     /* Header Navbar */
     .containerImageLogo {
         padding-top: 0.5rem;
@@ -719,7 +753,7 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 20px;
-        top: 20%;
+        top: 18%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -730,14 +764,14 @@ body {
 
     /* Drawing button floor mat - Tapis de sol */
     .linkFloorMatDrawing img {
-        width: 125px;
+        width: 120px;
         top: 37%;
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
         width: 30px;
-        top: 55%;
+        top: 53%;
     }
 
     /* Drawing button drawing board - Tableau dessin */
@@ -751,6 +785,26 @@ body {
         font-size: 0.4rem;
         left: 31%;
         top: 30%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing img {
+        width: 45px;
+        top: 51%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing img {
+        width: 50px;
+        left: 42%;
+        top: 45%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing img {
+        width: 200px;
+        left: 50%;
+        top: 21%;
     }
 
     /* Footer Navbar */
@@ -862,7 +916,7 @@ body {
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
         width: 30px;
-        top: 20%;
+        top: 19%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -894,6 +948,26 @@ body {
         font-size: 0.6rem;
         left: 31%;
         top: 31%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing img {
+        width: 60px;
+        top: 55%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing img {
+        width: 60px;
+        left: 42%;
+        top: 45%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing img {
+        width: 250px;
+        left: 50%;
+        top: 21%;
     }
 
     /* Footer Navbar */
@@ -1004,8 +1078,8 @@ body {
 
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
-        width: 38px;
-        top: 21%;
+        width: 35px;
+        top: 20%;
     }
     
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -1023,7 +1097,7 @@ body {
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
         width: 55px;
-        top: 60%;
+        top: 65%;
     }
 
     /* Drawing button drawing board - Tableau dessin */
@@ -1037,6 +1111,26 @@ body {
         font-size: 0.8rem;
         left: 31%;
         top: 31%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing img {
+        width: 80px;
+        top: 60%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing img {
+        width: 80px;
+        left: 42%;
+        top: 45%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing img {
+        width: 350px;
+        left: 50%;
+        top: 21%;
     }
 
     /* Footer Navbar */
@@ -1145,8 +1239,8 @@ body {
 
     /* Drawing button slippers - Chaussons */
     .linkSlippersBrownDrawing img {
-        width: 54px;
-        top: 22%;
+        width: 48px;
+        top: 21%;
     }
 
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -1164,7 +1258,7 @@ body {
     /* Drawing button rabbit rattle - Hochet lapin */
     .linkRabbitRattleDrawing img {
         width: 65px;
-        top: 65%;
+        top: 63%;
     }
 
     /* Drawing button drawing board - Tableau dessin */
@@ -1178,6 +1272,26 @@ body {
         font-size: 1rem;
         left: 31%;
         top: 31%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing img {
+        width: 100px;
+        top: 59%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing img {
+        width: 115px;
+        left: 42%;
+        top: 45%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing img {
+        width: 450px;
+        left: 50%;
+        top: 21%;
     }
 
     /* Footer Navbar */
