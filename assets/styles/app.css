@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    /* TODO - Voir la police */
 /* h2 {
     font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
     } */
@@ -175,30 +176,67 @@ body {
         transform: scale(1.05);
     }
 
-    .lineSloganCatalogue {
-        /* position: fixed; */
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        text-align: center;
     }
 
+    /* Slogan */
     .blockSlogan {
-        width: 55%;
-        text-align: center;
-        border: 0.1rem solid black;
-        border-radius: 0.8rem;
+        position: absolute;
+        top: 85%;
+        padding: 0 0.8rem;
     }
 
+    /* Button Catalogue */
     .btnCatalogue {
-        width: 10%;
-        text-align: center;
+        position: fixed;
+        left: 74%;
+        padding: 0 0.5rem;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
         border: 0.1rem solid black;
         border-radius: 0.8rem;
-        margin-right: 5rem;
     }
 
     .blockSlogan p, .btnCatalogue a {
-        font-size: 1.5rem;
-        margin: 0.5rem 0;
         color: blue;
         font-weight: bold;
+        margin: 0;
+    }
+
+    .btnCatalogue a:hover, .btnCatalogue a:focus {
+        background-color: rgb(196, 41, 160);
+        border-radius: 0.8rem;
+        color: white!important;
+        font-weight: 800;
+        padding: 0.3rem 0.5rem;
+    }
+
+    /* Back to top auto display */
+    #btn-back-to-top {
+        width: 2.5rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 0.25rem;
+        border: 0.1rem solid black;
+        border-radius: 1rem;
+        position: fixed;
+        right: 2%;
+        top: 90%;
+        display: none;
+    }
+
+    #btn-back-to-top:hover {
+        background-color: rgb(196, 41, 160);
+        border-radius: 1rem;
+        color: white!important;
+        font-weight: 800;
+        padding: 0.3rem;
     }
 
 /* Footer style */
@@ -207,9 +245,10 @@ body {
     }
 
     /* Footer Navbar */
-    .linkPresentationF:hover, .linkSoftToysF:hover, .linkComfortersF:hover, .linkRattlesF:hover, .linkToysF:hover, .linkFloorMatsF:hover, .linkBlanketsF:hover,
-    .linkGrannysF:hover, .linkSlippersF:hover, .linkAccessoriesF:hover, .linkNoveltiesF:hover, .linkHomeF:hover, .linkCatalogueF:hover,
-    .linkAboutF:hover, .linkAboutMeF:hover, .linkCleaningF:hover, .linkPolicyF:hover, .linkMapF:hover, .linkContactF:hover, .btnCatalogue a:hover {
+    .linkPresentationF:hover, .linkSoftToysF:hover, .linkComfortersF:hover, .linkRattlesF:hover, .linkToysF:hover,
+    .linkFloorMatsF:hover, .linkBlanketsF:hover, .linkGrannysF:hover, .linkSlippersF:hover, .linkAccessoriesF:hover,
+    .linkNoveltiesF:hover, .linkHomeF:hover, .linkCatalogueF:hover, .linkAboutF:hover, .linkAboutMeF:hover,
+    .linkCleaningF:hover, .linkPolicyF:hover, .linkMapF:hover, .linkContactF:hover {
         background-color: rgb(196, 41, 160);
         border-radius: 0.5rem;
         color: white!important;
@@ -217,9 +256,10 @@ body {
         padding: 0.3rem;
     }
 
-    .linkPresentationF:focus, .linkSoftToysF:focus, .linkComfortersF:focus, .linkRattlesF:focus, .linkToysF:focus, .linkFloorMatsF:focus, .linkBlanketsF:focus,
-    .linkGrannysF:focus, .linkSlippersF:focus, .linkAccessoriesF:focus, .linkNoveltiesF:focus, .linkHomeF:focus, .linkCatalogueF:focus,
-    .linkAboutF:focus, .linkAboutMeF:focus, .linkCleaningF:focus, .linkPolicyF:focus, .linkMapF:focus, .linkContactF:focus, .btnCatalogue a:focus {
+    .linkPresentationF:focus, .linkSoftToysF:focus, .linkComfortersF:focus, .linkRattlesF:focus, .linkToysF:focus,
+    .linkFloorMatsF:focus, .linkBlanketsF:focus, .linkGrannysF:focus, .linkSlippersF:focus, .linkAccessoriesF:focus,
+    .linkNoveltiesF:focus, .linkHomeF:focus, .linkCatalogueF:focus, .linkAboutF:focus, .linkAboutMeF:focus,
+    .linkCleaningF:focus, .linkPolicyF:focus, .linkMapF:focus, .linkContactF:focus {
         background-color: rgb(196, 41, 160);
         border-radius: 0.5rem;
         color: white!important;
@@ -300,6 +340,21 @@ body {
     .linkSoftToyDrawing img, .linkCradleDrawing img, .dogDrawing img, .catDrawing img, .linkMobileDrawing img, .linkBallDrawing img, .linkToyCubesDrawing img,
     .linkRattleDrawing img, .linkFloorMatDrawing img, .linkRabbitComforterDrawing img {
         display: none;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        top: 10%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.05rem solid black;
+        border-radius: 0.35rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.25rem;
     }
 
     /* Footer Navbar */
@@ -482,7 +537,7 @@ body {
     /* Drawing button mobile - Mobile */
     .linkMobileDrawing {
         width: 10%;
-        left: 68%;
+        left: 65%;
         top: 5%;
     }
 
@@ -505,6 +560,21 @@ body {
         width: 7.5%;
         left: 83%;
         top: 41%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        top: 12%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.05rem solid black;
+        border-radius: 0.35rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.4rem;
     }
 
     /* Footer Navbar */
@@ -693,7 +763,7 @@ body {
     /* Drawing button mobile - Mobile */
     .linkMobileDrawing {
         width: 10%;
-        left: 68%;
+        left: 65%;
         top: 5%;
     }
 
@@ -716,6 +786,21 @@ body {
         width: 6.5%;
         left: 84%;
         top: 43%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        top: 17%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.6rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.5rem;
     }
 
     /* Footer Navbar */
@@ -897,8 +982,8 @@ body {
 
     /* Drawing button mobile - Mobile */
     .linkMobileDrawing {
-        width: 10%;
-        left: 70%;
+        width: 8%;
+        left: 66%;
         top: 5%;
     }
 
@@ -921,6 +1006,21 @@ body {
         width: 5.5%;
         left: 84%;
         top: 44.5%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        top: 22%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.6rem;
     }
 
     /* Footer Navbar */
@@ -1082,7 +1182,7 @@ body {
     .dogDrawing {
         width: 6%;
         left: 44%;
-        top: 65%;
+        top: 60%;
     }
 
     /* Drawing button cradle - Berceau */
@@ -1102,7 +1202,7 @@ body {
     /* Drawing button mobile - Mobile */
     .linkMobileDrawing {
         width: 8%;
-        left: 70%;
+        left: 67%;
         top: 5%;
     }
 
@@ -1125,6 +1225,21 @@ body {
         width: 4.5%;
         left: 85%;
         top: 47%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        top: 31%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.85rem;
     }
 
     /* Footer Navbar */
@@ -1306,7 +1421,7 @@ body {
     /* Drawing button mobile - Mobile */
     .linkMobileDrawing {
         width: 9%;
-        left: 70%;
+        left: 67%;
         top: 5%;
     }
 
@@ -1321,7 +1436,7 @@ body {
     .linkToyCubesDrawing {
         width: 6.5%;
         left: 87%;
-        top: 70%;
+        top: 72%;
     }
 
     /* Drawing button rattle - Hochet */
@@ -1329,6 +1444,21 @@ body {
         width: 4%;
         left: 86%;
         top: 48%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        top: 40%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 1.15rem;
     }
 
     /* Footer Navbar */
@@ -1439,7 +1569,7 @@ body {
     .linkSlippersBrownDrawing {
         width: 4.5%;
         left: 10%;
-        top: 22%;
+        top: 24.5%;
     }
 
     /* Drawing button rabbit comforter - Doudou lapin */
@@ -1521,7 +1651,7 @@ body {
 
     /* Drawing button toy cubes - Cubes */
     .linkToyCubesDrawing {
-        width: 6.5%;
+        width: 6%;
         left: 90%;
         top: 68%;
     }
@@ -1530,7 +1660,22 @@ body {
     .linkRattleDrawing {
         width: 4%;
         left: 85%;
-        top: 43%;
+        top: 48%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        top: 53%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+    
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 1.5rem;
     }
 
     /* Footer Navbar */
