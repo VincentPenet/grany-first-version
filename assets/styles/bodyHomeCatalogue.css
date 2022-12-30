@@ -1,0 +1,36 @@
+/* Body catalogue page style */
+.cataloguePage {
+    font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('../../public/images/decor-homepage/Background-baby.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Block Intro */
+.cataloguePage h1 {
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cataloguePage p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.blockIntro {
+    margin-top: 3rem;
+}
+
+/* Grid categories */
+.gridCategories {
+    margin: 3rem 0;
+}
+
+.linkAmigurumiDrawing img:hover, .linkComforterDrawing img:hover, .linkRabbitRattleDrawing img:hover,
+.linkBallToyDrawing img:hover, .linkFloorDrawing img:hover, .linkBlanketDrawing img:hover,
+.linkSlippersDrawing img:hover, .linkBellDrawing img:hover, .linkBulbDrawing img:hover  {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

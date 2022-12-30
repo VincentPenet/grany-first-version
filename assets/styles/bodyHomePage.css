@@ -1,0 +1,909 @@
+/* Body Homepage style */
+.imageBabyRoom {
+    position : relative;
+}
+
+/* Drawing button slippers - Chaussons */
+.linkSlippersBrownDrawing {
+    position: absolute;
+}
+
+/* Drawing button rabbit comforter - Doudou lapin */
+.linkRabbitComforterDrawing {
+    position: absolute;
+}
+
+/* Drawing button floor mat - Tapis de sol */
+.linkFloorMatDrawing {
+    position: absolute;
+}
+
+/* Drawing button rabbit rattle - Hochet lapin */
+.linkRattleDrawing {
+    position: absolute;
+}
+
+/* Drawing button drawing board - Tableau dessin */
+.DrawingBoardDrawing {
+    position: absolute;
+}
+
+/* Text drawing board - Texte Nouveautés */
+.NoveltiesText {
+    position: absolute;
+    margin-bottom: 0;
+    transform: rotate(-3.5deg);
+    font-weight: bold;
+    color: rgb(145, 6, 245);
+}
+
+/* Drawing button soft toy - Amigurumi */
+.linkSoftToyDrawing {
+    position: absolute;
+}
+
+/* Drawing dog - Bingo */
+.dogDrawing {
+    position: absolute;
+}
+
+/* Drawing button cradle - Berceau */
+.linkCradleDrawing {
+    position: absolute;
+}
+
+/* Image cat - Chat */
+.catDrawing {
+    position: absolute;
+}
+
+/* Drawing button mobile - Mobile */
+.linkMobileDrawing {
+    position: absolute;
+}
+
+/* Drawing button ball - Balle */
+.linkBallDrawing {
+    position: absolute;
+}
+
+/* Drawing button toy cubes - Cubes */
+.linkToyCubesDrawing {
+    position: absolute;
+}
+
+/* Drawing button rattle - Hochet */
+.linkRattleDrawing {
+    position: absolute;
+}
+
+.linkSlippersBrownDrawing img:hover, .linkRattleDrawing img:hover, .linkSoftToyDrawing img:hover,
+.linkMobileDrawing img:hover, .linkBallDrawing img:hover, .linkToyCubesDrawing img:hover, .linkRattleDrawing img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.linkCradleDrawing img:hover, .linkFloorMatDrawing img:hover, .linkRabbitComforterDrawing img:hover,
+.linkDrawingBoardDrawing img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/* Slogan and button Catalogue */
+.blockSlogan, .btnCatalogue {
+    text-align: center;
+}
+
+/* Slogan */
+.blockSlogan {
+    position: absolute;
+    top: 83%;
+    padding: 0 0.8rem;
+}
+
+/* Button Catalogue */
+.btnCatalogue {
+    position: fixed;
+    padding: 0 0.5rem;
+}
+
+/* Slogan and button Catalogue */
+.blockSlogan, .btnCatalogue {
+    border: 0.1rem solid black;
+    border-radius: 0.8rem;
+}
+
+.blockSlogan p {
+    font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(63, 72, 204);
+    font-weight: bold;
+    margin: 0;
+}
+
+.btnCatalogue a {
+    color: rgb(145, 6, 245);
+    font-weight: bold;
+    margin: 0;
+}
+
+.btnCatalogue a:hover, .btnCatalogue a:focus, .NoveltiesText:hover, .NoveltiesText:focus {
+    background-color: rgb(196, 41, 160);
+    border-radius: 0.8rem;
+    color: white!important;
+    font-weight: 800;
+    padding: 0.3rem 0.5rem;
+}
+
+/* Media queries Bootstrap */
+    /* Extra small devices (portrait phones, 479px and down) */
+    @media (max-width: 479px) {
+    /* Body */
+    .imageBabyRoomEmpty {
+        display: none;
+    }
+    .linkSlippersBrownDrawing img, .linkRattleDrawing img, .linkDrawingBoardDrawing img, .NoveltiesText,
+    .linkSoftToyDrawing img, .linkCradleDrawing img, .dogDrawing img, .catDrawing img, .linkMobileDrawing img, .linkBallDrawing img, .linkToyCubesDrawing img,
+    .linkRattleDrawing img, .linkFloorMatDrawing img, .linkRabbitComforterDrawing img {
+        display: none;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        left: 74%;
+        top: 10%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.05rem solid black;
+        border-radius: 0.35rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.25rem;
+    }
+
+    }
+
+    /* Small devices (landscape phones, 575px and 480px) */
+    @media (max-width: 575px) and (min-width: 480px) {
+    /* Body */
+    .imageBabyRoomFull {
+        display: none;
+    }
+
+    /* Drawing button slippers - Chaussons */
+    .linkSlippersBrownDrawing {
+        width: 8%;
+        left: 9%;
+        top: 19%;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing {
+        width: 12%;
+        left: 0.5%;
+        top: 55%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing {
+        width: 20%;
+        left: 7%;
+        top: 48%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRattleDrawing {
+        width: 11%;
+        left: 18%;
+        top: 65%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing {
+        width: 16%;
+        left: 25%;
+        top: 30%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.1rem;
+        left: 42%;
+        top: 30%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing {
+        width: 12%;
+        left: 28%;
+        top: 60%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing {
+        width: 5%;
+        left: 48%;
+        top: 55%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing {
+        width: 26%;
+        left: 52%;
+        top: 28%;
+    }
+
+    /* Image cat - Chat */
+    .catDrawing {
+        width:3.5%;
+        left: 60%;
+        top: 75%;
+    }
+
+    /* Drawing button mobile - Mobile */
+    .linkMobileDrawing {
+        width: 10%;
+        left: 65%;
+        top: 5%;
+    }
+
+    /* Drawing button ball - Balle */
+    .linkBallDrawing {
+        width: 8%;
+        left: 75%;
+        top: 72%;
+    }
+
+    /* Drawing button toy cubes - Cubes */
+    .linkToyCubesDrawing {
+        width: 9%;
+        left: 82%;
+        top: 68%;
+    }
+
+    /* Drawing button rattle - Hochet */
+    .linkRattleDrawing {
+        width: 7.5%;
+        left: 83%;
+        top: 41%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        left: 74%;
+        top: 12%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.05rem solid black;
+        border-radius: 0.35rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.4rem;
+    }
+
+    }
+
+    /* Small devices (landscape phones, 700px and 576px) */
+    @media (max-width: 700px) and (min-width: 576px) {
+    /* Body */
+    .imageBabyRoomFull {
+        display: none;
+    }
+
+    /* Drawing button slippers - Chaussons */
+    .linkSlippersBrownDrawing {
+        width: 7.5%;
+        left: 9%;
+        top: 20%;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing {
+        width: 11%;
+        left: 2%;
+        top: 55%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing {
+        width: 20%;
+        left: 9%;
+        top: 45%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRattleDrawing {
+        width: 9%;
+        left: 22%;
+        top: 65%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing {
+        width: 16%;
+        left: 27%;
+        top: 25%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.2rem;
+        left: 36%;
+        top: 27%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing {
+        width: 11%;
+        left: 33%;
+        top: 60%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing {
+        width: 6%;
+        left: 48%;
+        top: 52%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing {
+        width: 26%;
+        left: 52%;
+        top: 25%;
+    }
+
+    /* Image cat - Chat */
+    .catDrawing {
+        width: 3.5%;
+        left: 60%;
+        top: 72%;
+    }
+
+    /* Drawing button mobile - Mobile */
+    .linkMobileDrawing {
+        width: 10%;
+        left: 65%;
+        top: 5%;
+    }
+
+    /* Drawing button ball - Balle */
+    .linkBallDrawing {
+        width: 7%;
+        left: 75%;
+        top: 75%;
+    }
+
+    /* Drawing button toy cubes - Cubes */
+    .linkToyCubesDrawing {
+        width: 8.5%;
+        left: 85%;
+        top: 70%;
+    }
+
+    /* Drawing button rattle - Hochet */
+    .linkRattleDrawing {
+        width: 6.5%;
+        left: 84%;
+        top: 43%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        left: 74%;
+        top: 17%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.6rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.5rem;
+    }
+
+    }
+
+    /* Medium devices (tablets, 991px and 701px) */
+    @media (max-width: 991px) and (min-width: 701px) {
+    /* Body */
+    .imageBabyRoomFull {
+        display: none;
+    }
+
+    /* Drawing button slippers - Chaussons */
+    .linkSlippersBrownDrawing {
+        width: 6.5%;
+        left: 9%;
+        top: 21%;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing {
+        width: 9%;
+        left: 3%;
+        top: 55%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing {
+        width: 20%;
+        left: 11%;
+        top: 45%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRattleDrawing {
+        width: 7%;
+        left: 22%;
+        top: 70%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing {
+        width: 16%;
+        left: 28%;
+        top: 28%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.35rem;
+        left: 32%;
+        top: 25%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing {
+        width: 9%;
+        left: 31%;
+        top: 65%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing {
+        width: 7%;
+        left: 44%;
+        top: 54%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing {
+        width: 30%;
+        left: 50%;
+        top: 21%;
+    }
+
+    /* Image cat - Chat */
+    .catDrawing {
+        width: 4%;
+        left: 59%;
+        top: 78%;
+    }
+
+    /* Drawing button mobile - Mobile */
+    .linkMobileDrawing {
+        width: 8%;
+        left: 66%;
+        top: 5%;
+    }
+
+    /* Drawing button ball - Balle */
+    .linkBallDrawing {
+        width: 6.5%;
+        left: 80%;
+        top: 78%;
+    }
+
+    /* Drawing button toy cubes - Cubes */
+    .linkToyCubesDrawing {
+        width: 8%;
+        left: 87%;
+        top: 70%;
+    }
+
+    /* Drawing button rattle - Hochet */
+    .linkRattleDrawing {
+        width: 5.5%;
+        left: 84%;
+        top: 44.5%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        left: 74%;
+        top: 22%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.6rem;
+    }
+
+    }
+
+    /* Large devices (desktops, 1229px and 992px) */
+    @media (max-width: 1229px) and (min-width: 992px) {
+    /* Body */
+    .imageBabyRoomFull {
+        display: none;
+    }
+
+    /* Drawing button slippers - Chaussons */
+    .linkSlippersBrownDrawing {
+        width: 5%;
+        left: 10%;
+        top: 24%;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing {
+        width: 8%;
+        left: 3%;
+        top: 58%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing {
+        width: 20%;
+        left: 9%;
+        top: 50%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRattleDrawing {
+        width: 6.5%;
+        left: 22%;
+        top: 70%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing {
+        width: 16%;
+        left: 28%;
+        top: 30%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.5rem;
+        left: 31%;
+        top: 26%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing {
+        width: 9%;
+        left: 33%;
+        top: 70%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing {
+        width: 6%;
+        left: 44%;
+        top: 60%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing {
+        width: 30%;
+        left: 50%;
+        top: 30%;
+    }
+
+    /* Image cat - Chat */
+    .catDrawing {
+        width: 3.5%;
+        left: 59%;
+        top: 87%;
+    }
+
+    /* Drawing button mobile - Mobile */
+    .linkMobileDrawing {
+        width: 8%;
+        left: 67%;
+        top: 5%;
+    }
+
+    /* Drawing button ball - Balle */
+    .linkBallDrawing {
+        width: 5.5%;
+        left: 80%;
+        top: 85%;
+    }
+
+    /* Drawing button toy cubes - Cubes */
+    .linkToyCubesDrawing {
+        width: 7%;
+        left: 87%;
+        top: 72%;
+    }
+
+    /* Drawing button rattle - Hochet */
+    .linkRattleDrawing {
+        width: 4.5%;
+        left: 85%;
+        top: 47%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        left: 74%;
+        top: 31%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 0.85rem;
+    }
+
+    }
+
+    /* Extra large devices (large desktops, 1649px and 1230px) */
+    @media (max-width: 1649px) and (min-width: 1230px) {
+    /* Body */
+    .imageBabyRoomFull {
+        display: none;
+    }
+
+    /* Drawing button slippers - Chaussons */
+    .linkSlippersBrownDrawing {
+        width: 5%;
+        left: 10%;
+        top: 24%;
+    }
+    
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing {
+        width: 9%;
+        left: 3%;
+        top: 60%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing {
+        width: 20%;
+        left: 10%;
+        top: 47%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRattleDrawing {
+        width: 6.5%;
+        left: 22%;
+        top: 70%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing {
+        width: 16%;
+        left: 28%;
+        top: 30%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 0.7rem;
+        left: 29%;
+        top: 26%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing {
+        width: 8%;
+        left: 33%;
+        top: 70%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing {
+        width: 6%;
+        left: 45%;
+        top: 59%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing {
+        width: 30%;
+        left: 50%;
+        top: 25%;
+    }
+
+    /* Image cat - Chat */
+    .catDrawing {
+        width: 3.5%;
+        left: 59%;
+        top: 86%;
+    }
+
+    /* Drawing button mobile - Mobile */
+    .linkMobileDrawing {
+        width: 9%;
+        left: 67%;
+        top: 5%;
+    }
+
+    /* Drawing button ball - Balle */
+    .linkBallDrawing {
+        width: 5%;
+        left: 80%;
+        top: 80%;
+    }
+
+    /* Drawing button toy cubes - Cubes */
+    .linkToyCubesDrawing {
+        width: 6.5%;
+        left: 87%;
+        top: 72%;
+    }
+
+    /* Drawing button rattle - Hochet */
+    .linkRattleDrawing {
+        width: 4%;
+        left: 86%;
+        top: 48%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        left: 74%;
+        top: 20%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+
+    .blockSlogan p, .btnCatalogue a {
+        font-size: 1.15rem;
+    }
+
+    }
+
+    /* Extremely large devices (large desktops, 1650px and up) */
+    @media (min-width: 1650px) {
+
+    /* Body */
+    .imageBabyRoomFull {
+        display: none;
+    }
+
+    /* Drawing button slippers - Chaussons */
+    .linkSlippersBrownDrawing {
+        width: 4.5%;
+        left: 10%;
+        top: 24.5%;
+    }
+
+    /* Drawing button rabbit comforter - Doudou lapin */
+    .linkRabbitComforterDrawing {
+        width: 8%;
+        left: 3%;
+        top: 60%;
+    }
+
+    /* Drawing button floor mat - Tapis de sol */
+    .linkFloorMatDrawing {
+        width: 20%;
+        left: 9%;
+        top: 48%;
+    }
+
+    /* Drawing button rabbit rattle - Hochet lapin */
+    .linkRattleDrawing {
+        width: 6%;
+        left: 22%;
+        top: 67%;
+    }
+
+    /* Drawing button drawing board - Tableau dessin */
+    .DrawingBoardDrawing {
+        width: 15%;
+        left: 28%;
+        top: 28%;
+    }
+
+    /* Text drawing board - Texte Nouveautés */
+    .NoveltiesText {
+        font-size: 1rem;
+        left: 28.5%;
+        top: 25%;
+    }
+
+    /* Drawing button soft toy - Amigurumi */
+    .linkSoftToyDrawing {
+        width: 8%;
+        left: 33%;
+        top: 66%;
+    }
+
+    /* Drawing dog - Bingo */
+    .dogDrawing {
+        width: 7%;
+        left: 43%;
+        top: 52%;
+    }
+
+    /* Drawing button cradle - Berceau */
+    .linkCradleDrawing {
+        width: 30%;
+        left: 50%;
+        top: 21%;
+    }
+
+    /* Image cat - Chat */
+    .catDrawing {
+        width: 4%;
+        left: 58%;
+        top: 80%;
+    }
+
+    /* Drawing button mobile - Mobile */
+    .linkMobileDrawing {
+        width: 15%;
+        left: 70%;
+        top: 5%;
+    }
+
+    /* Drawing button ball - Balle */
+    .linkBallDrawing {
+        width: 4.5%;
+        left: 80%;
+        top: 73%;
+    }
+
+    /* Drawing button toy cubes - Cubes */
+    .linkToyCubesDrawing {
+        width: 6%;
+        left: 90%;
+        top: 68%;
+    }
+
+    /* Drawing button rattle - Hochet */
+    .linkRattleDrawing {
+        width: 4%;
+        left: 85%;
+        top: 48%;
+    }
+
+    /* Button Catalogue */
+    .btnCatalogue {
+        left: 85%;
+        top: 30%;
+    }
+
+    /* Slogan and button Catalogue */
+    .blockSlogan, .btnCatalogue {
+        border: 0.1rem solid black;
+        border-radius: 0.8rem;
+    }
+    
+    .blockSlogan p {
+        font-size: 2.4rem;
+    }
+    
+    .btnCatalogue a {
+        font-size: 1.5rem;
+    }
+
+}

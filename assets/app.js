@@ -7,6 +7,10 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
+import './styles/header.css';
+import './styles/footer.css';
+import './styles/bodyHomePage.css';
+import './styles/bodyHomeCatalogue.css';
 
 // start the Stimulus application
 import './bootstrap';
