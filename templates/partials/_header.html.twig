@@ -63,7 +63,14 @@
         <div class="containerNavbar row text-capitalize">
 
             <!-- breadcrumb -->
-            <p class="containerBreadcrumb col-3 offset-1 text-muted fst-italic text-decoration-underline" aria-label="breadcrumb"><a class="linkHome text-dark" href="#">Accueil</a> {{breadcrumb}}</p>
+            <p class="containerBreadcrumb col-3 offset-1 text-muted fst-italic text-decoration-underline" aria-label="breadcrumb">
+            {# {% if {{breadcrumb}}= '' %}
+                Accueil
+            {% else %}
+                <a class="linkHome text-dark" href="#">Accueil</a> > {{breadcrumb}}
+            {% endif %} #}
+            <a class="linkHome text-dark" href="#">Accueil</a> > {{breadcrumb}}
+            </p>
 
             {# TODO : Reprendre breadcrumb #}
             {# <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">

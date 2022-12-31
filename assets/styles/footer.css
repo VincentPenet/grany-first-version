@@ -29,7 +29,41 @@
 /* Media queries Bootstrap */
     /* Extra small devices (portrait phones, 479px and down) */
     @media (max-width: 479px) {
+        .footerNavbar {
+            display: none!important;
+        }
     
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkContactF {
+            font-size: 0.2rem;
+            margin-top: 0.2rem;
+            padding: 0;
+        }
+    
+        .infoContact {
+            font-size: 0.2rem;
+            margin-top: 0.1rem;
+        }
+    
+        .infoProduction {
+            font-size: 0.2rem;
+            margin-bottom: 1rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+
         }
     
         /* Small devices (landscape phones, 575px and 480px) */

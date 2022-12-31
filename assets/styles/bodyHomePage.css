@@ -97,7 +97,7 @@
 /* Slogan */
 .blockSlogan {
     position: absolute;
-    top: 83%;
+    top: 82%;
     padding: 0 0.8rem;
 }
 
@@ -147,10 +147,15 @@
         display: none;
     }
 
+    /* Slogan */
+    .blockSlogan {
+        top: 85%;
+    }
+
     /* Button Catalogue */
     .btnCatalogue {
-        left: 74%;
-        top: 10%;
+        left: 85%;
+        top: 5%;
     }
 
     /* Slogan and button Catalogue */
@@ -159,8 +164,12 @@
         border-radius: 0.35rem;
     }
 
-    .blockSlogan p, .btnCatalogue a {
-        font-size: 0.25rem;
+    .blockSlogan p {
+        font-size: 0.5rem;
+    }
+    
+    .btnCatalogue a {
+        font-size: 0.3rem;
     }
 
     }
@@ -270,10 +279,15 @@
         top: 41%;
     }
 
+    /* Slogan */
+    .blockSlogan {
+        top: 85%;
+    }
+
     /* Button Catalogue */
     .btnCatalogue {
-        left: 74%;
-        top: 12%;
+        left: 85%;
+        top: 6%;
     }
 
     /* Slogan and button Catalogue */
@@ -282,8 +296,12 @@
         border-radius: 0.35rem;
     }
 
-    .blockSlogan p, .btnCatalogue a {
-        font-size: 0.4rem;
+    .blockSlogan p {
+        font-size: 0.5rem;
+    }
+    
+    .btnCatalogue a {
+        font-size: 0.3rem;
     }
 
     }
@@ -393,10 +411,15 @@
         top: 43%;
     }
 
+    /* Slogan */
+    .blockSlogan {
+        top: 82%;
+    }
+
     /* Button Catalogue */
     .btnCatalogue {
-        left: 74%;
-        top: 17%;
+        left: 85%;
+        top: 9%;
     }
 
     /* Slogan and button Catalogue */
@@ -405,8 +428,12 @@
         border-radius: 0.6rem;
     }
 
-    .blockSlogan p, .btnCatalogue a {
-        font-size: 0.5rem;
+    .blockSlogan p {
+        font-size: 0.7rem;
+    }
+    
+    .btnCatalogue a {
+        font-size: 0.4rem;
     }
 
     }
@@ -471,7 +498,7 @@
     .dogDrawing {
         width: 7%;
         left: 44%;
-        top: 54%;
+        top: 52%;
     }
 
     /* Drawing button cradle - Berceau */
@@ -516,10 +543,15 @@
         top: 44.5%;
     }
 
+    /* Slogan */
+    .blockSlogan {
+        top: 83%;
+    }
+
     /* Button Catalogue */
     .btnCatalogue {
-        left: 74%;
-        top: 22%;
+        left: 85%;
+        top: 13%;
     }
 
     /* Slogan and button Catalogue */
@@ -527,9 +559,13 @@
         border: 0.1rem solid black;
         border-radius: 0.8rem;
     }
-
-    .blockSlogan p, .btnCatalogue a {
-        font-size: 0.6rem;
+    
+    .blockSlogan p {
+        font-size: 0.8rem;
+    }
+    
+    .btnCatalogue a {
+        font-size: 0.5rem;
     }
 
     }
@@ -639,10 +675,15 @@
         top: 47%;
     }
 
+    /* Slogan */
+    .blockSlogan {
+        top: 84%;
+    }
+
     /* Button Catalogue */
     .btnCatalogue {
-        left: 74%;
-        top: 31%;
+        left: 85%;
+        top: 17%;
     }
 
     /* Slogan and button Catalogue */
@@ -650,9 +691,13 @@
         border: 0.1rem solid black;
         border-radius: 0.8rem;
     }
-
-    .blockSlogan p, .btnCatalogue a {
-        font-size: 0.85rem;
+    
+    .blockSlogan p {
+        font-size: 1.1rem;
+    }
+    
+    .btnCatalogue a {
+        font-size: 0.8rem;
     }
 
     }
@@ -717,7 +762,7 @@
     .dogDrawing {
         width: 6%;
         left: 45%;
-        top: 59%;
+        top: 57%;
     }
 
     /* Drawing button cradle - Berceau */
@@ -762,10 +807,15 @@
         top: 48%;
     }
 
+    /* Slogan */
+    .blockSlogan {
+        top: 84%;
+    }
+
     /* Button Catalogue */
     .btnCatalogue {
-        left: 74%;
-        top: 20%;
+        left: 89%;
+        top: 23%;
     }
 
     /* Slogan and button Catalogue */
@@ -773,9 +823,13 @@
         border: 0.1rem solid black;
         border-radius: 0.8rem;
     }
-
-    .blockSlogan p, .btnCatalogue a {
-        font-size: 1.15rem;
+    
+    .blockSlogan p {
+        font-size: 1.6rem;
+    }
+    
+    .btnCatalogue a {
+        font-size: 1rem;
     }
 
     }
@@ -886,10 +940,15 @@
         top: 48%;
     }
 
+    /* Slogan */
+    .blockSlogan {
+        top: 82%;
+    }
+
     /* Button Catalogue */
     .btnCatalogue {
-        left: 85%;
-        top: 30%;
+        left: 89%;
+        top: 31%;
     }
 
     /* Slogan and button Catalogue */
