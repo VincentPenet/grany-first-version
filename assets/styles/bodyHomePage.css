@@ -19,7 +19,7 @@
 }
 
 /* Drawing button rabbit rattle - Hochet lapin */
-.linkRattleDrawing {
+.linkRabbitRattleDrawing {
     position: absolute;
 }
 
@@ -73,12 +73,12 @@
 }
 
 /* Drawing button rattle - Hochet */
-.linkRattleDrawing {
+.linkToyRattleDrawing {
     position: absolute;
 }
 
-.linkSlippersBrownDrawing img:hover, .linkRattleDrawing img:hover, .linkSoftToyDrawing img:hover,
-.linkMobileDrawing img:hover, .linkBallDrawing img:hover, .linkToyCubesDrawing img:hover, .linkRattleDrawing img:hover {
+.linkSlippersBrownDrawing img:hover, .linkRabbitRattleDrawing img:hover, .linkSoftToyDrawing img:hover,
+.linkMobileDrawing img:hover, .linkBallDrawing img:hover, .linkToyCubesDrawing img:hover, .linkToyRattleDrawing img:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
@@ -141,9 +141,9 @@
     .imageBabyRoomEmpty {
         display: none;
     }
-    .linkSlippersBrownDrawing img, .linkRattleDrawing img, .linkDrawingBoardDrawing img, .NoveltiesText,
+    .linkSlippersBrownDrawing img, .linkRabbitRattleDrawing img, .linkDrawingBoardDrawing img, .NoveltiesText,
     .linkSoftToyDrawing img, .linkCradleDrawing img, .dogDrawing img, .catDrawing img, .linkMobileDrawing img, .linkBallDrawing img, .linkToyCubesDrawing img,
-    .linkRattleDrawing img, .linkFloorMatDrawing img, .linkRabbitComforterDrawing img {
+    .linkToyRattleDrawing img, .linkFloorMatDrawing img, .linkRabbitComforterDrawing img {
         display: none;
     }
 
@@ -203,7 +203,7 @@
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
-    .linkRattleDrawing {
+    .linkRabbitRattleDrawing {
         width: 11%;
         left: 18%;
         top: 65%;
@@ -273,7 +273,7 @@
     }
 
     /* Drawing button rattle - Hochet */
-    .linkRattleDrawing {
+    .linkToyRattleDrawing {
         width: 7.5%;
         left: 83%;
         top: 41%;
@@ -335,7 +335,7 @@
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
-    .linkRattleDrawing {
+    .linkRabbitRattleDrawing {
         width: 9%;
         left: 22%;
         top: 65%;
@@ -405,7 +405,7 @@
     }
 
     /* Drawing button rattle - Hochet */
-    .linkRattleDrawing {
+    .linkToyRattleDrawing {
         width: 6.5%;
         left: 84%;
         top: 43%;
@@ -467,7 +467,7 @@
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
-    .linkRattleDrawing {
+    .linkRabbitRattleDrawing {
         width: 7%;
         left: 22%;
         top: 70%;
@@ -537,7 +537,7 @@
     }
 
     /* Drawing button rattle - Hochet */
-    .linkRattleDrawing {
+    .linkToyRattleDrawing {
         width: 5.5%;
         left: 84%;
         top: 44.5%;
@@ -599,7 +599,7 @@
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
-    .linkRattleDrawing {
+    .linkRabbitRattleDrawing {
         width: 6.5%;
         left: 22%;
         top: 70%;
@@ -669,7 +669,7 @@
     }
 
     /* Drawing button rattle - Hochet */
-    .linkRattleDrawing {
+    .linkToyRattleDrawing {
         width: 4.5%;
         left: 85%;
         top: 47%;
@@ -731,7 +731,7 @@
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
-    .linkRattleDrawing {
+    .linkRabbitRattleDrawing {
         width: 6.5%;
         left: 22%;
         top: 70%;
@@ -801,7 +801,7 @@
     }
 
     /* Drawing button rattle - Hochet */
-    .linkRattleDrawing {
+    .linkToyRattleDrawing {
         width: 4%;
         left: 86%;
         top: 48%;
@@ -864,7 +864,7 @@
     }
 
     /* Drawing button rabbit rattle - Hochet lapin */
-    .linkRattleDrawing {
+    .linkRabbitRattleDrawing {
         width: 6%;
         left: 22%;
         top: 67%;
@@ -934,7 +934,7 @@
     }
 
     /* Drawing button rattle - Hochet */
-    .linkRattleDrawing {
+    .linkToyRattleDrawing {
         width: 4%;
         left: 85%;
         top: 48%;

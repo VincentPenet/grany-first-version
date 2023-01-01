@@ -8,11 +8,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeCatalogueController extends AbstractController
 {
-    #[Route('/catalogue', name: 'app_home_catalogue')]
+    #[Route('/catalogue', name: 'home_catalogue')]
     public function index(): Response
     {
         return $this->render('home_catalogue/index.html.twig', [
-            'breadcrumb' => '> Présentation catalogue',
+            'breadcrumb' => 'Présentation catalogue',
         ]);
     }
 }
