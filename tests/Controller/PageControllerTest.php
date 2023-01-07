@@ -16,9 +16,6 @@ class PageControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/');
 
         // Pour vérifier que l’URl envoie bien une réponse 200
-        $this->assertResponseStatusCodeSame(200);
-
-        // Autre façon d’écrire la ligne du dessus est d’utiliser les constantes de l’objet Response, ici la constante HTTP_OK
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
     }
 
@@ -31,9 +28,6 @@ class PageControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/catalogue');
 
         // Pour vérifier que l’URl envoie bien une réponse 200
-        $this->assertResponseStatusCodeSame(200);
-
-        // Autre façon d’écrire la ligne du dessus est d’utiliser les constantes de l’objet Response, ici la constante HTTP_OK
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
     }
 }
