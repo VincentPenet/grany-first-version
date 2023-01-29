@@ -67,10 +67,7 @@
         ],
         "php-cs-fixer": [
             "php-cs-fixer --config=./.php-cs-fixer.dist"
-        ],
-        // "phpstan": [
-        //     "vendor/bin/phpstan -c phpstan.neon"
-        // ]
+        ]
     },
     "conflict": {
         "symfony/symfony": "*"
