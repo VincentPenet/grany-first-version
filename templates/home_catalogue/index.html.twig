@@ -1,0 +1,116 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeCatalogueController!{% endblock %}
+
+{% block body %}
+
+<!-- Container Central - Home catalogue -->
+<div class="cataloguePage container-fluid col-11 offset-1">
+
+    <!-- Title -->
+    <h1>Catalogue</h1>
+
+    <!-- Introduction -->
+    <div class="blockIntro">
+        <p>L'ensemble de mes produits crochetés sont confectionnés et assemblés manuellement en France avec du fil de coton.</p>
+        <p>En parcourant les différentes catégories, vous trouverez nombre d'idées à offrir à vos proches, vos amis ou vos connaissances sans limite d'âge.</p>
+        <p>Que ce soit pour une naissance, un anniversaire ou tout simplement pour faire plaisir, choisissez un cadeau original fait main et sur mesure.</p>
+        <p class="fw-bold">Mes produits peuvent être personnalisés ou faire l'objet d'une demande particulière.</p>
+        <p class="fw-bold">Pour cela, 
+        <a href="#">Envoyez moi un message</a> 
+        avec un descriptif le plus précis possible de votre projet.</p>
+        <p>Je vous répondrai quant à sa faisabilité.</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="gridCategories">
+        <!-- Line N°1 -->
+        <div class="row col-12 justify-content-between">
+    
+            <!-- Case 1 -->
+            <div class="linkAmigurumiDrawing col-3 border border-dark">
+                <p class="fw-bold">Peluches (Amigurumi)</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/amigurumi.png')}}" alt="Peluche (Amigurumi)">
+                </a>
+            </div>
+    
+            <!-- Case 2 -->
+            <div class="linkComforterDrawing col-3 border border-dark">
+                <p class="fw-bold">Doudous</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/comforters.png')}}" alt="Doudou lapin">
+                </a>
+            </div>
+    
+            <!-- Case 3 -->
+            <div class="linkRattleDrawing col-3 border border-dark">
+                <p class="fw-bold">Hochets</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/rattles.png')}}" alt="Hochet lapin">
+                </a>
+            </div>
+    
+        </div> <!-- Line N°1 -->
+    
+        <!-- Line N°2 -->
+        <div class="row col-12 justify-content-between">
+    
+            <!-- Case 1 -->
+            <div class="linkBallToyDrawing col-3 border border-dark">
+                <p class="fw-bold">Jouets</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/toys.png')}}" alt="Balle Jouet">
+                </a>
+            </div>
+    
+            <!-- Case 2 -->
+            <div class="linkFloorDrawing col-3 border border-dark">
+                <p class="fw-bold">Tapis de sol - Grannys</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/floor-mats.png')}}" alt="Tapis de sol">
+                </a>
+            </div>
+    
+            <!-- Case 3 -->
+            <div class="linkBlanketDrawing col-3 border border-dark">
+                <p class="fw-bold">Couvertures - Grannys</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/blankets.png')}}" alt="Couvertures">
+                </a>
+            </div>
+        </div> <!-- Line N°2 -->
+    
+        <!-- Line N°3 -->
+        <div class="row col-12 justify-content-between">
+    
+            <!-- Case 1 -->
+            <div class="linkSlippersDrawing col-3 border border-dark">
+                <p class="fw-bold">Chaussons</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/slippers.png')}}" alt="Chaussons">
+                </a>
+            </div>
+    
+            <!-- Case 2 -->
+            <div class="linkBellDrawing col-3 border border-dark">
+                <p class="fw-bold">Accessoires</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/accessories.png')}}" alt="Grelot Accessoires">
+                </a>
+            </div>
+    
+            <!-- Case 3 -->
+            <div class="linkBulbDrawing col-3 border border-dark">
+                <p class="fw-bold">Nouveautés</p>
+                <a href="">
+                    <img class="img-fluid" src="{{asset('build/images/novelties.png')}}" alt="Ampoule idée">
+                </a>
+            </div>
+        </div> <!-- Line N°3 -->
+    
+    </div> <!-- Grid -->
+
+</div> <!-- Container Central - Home catalogue -->
+
+{% endblock %}

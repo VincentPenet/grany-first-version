@@ -7,6 +7,10 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
+import './styles/header.css';
+import './styles/footer.css';
+import './styles/bodyHomePage.css';
+import './styles/bodyHomeCatalogue.css';
 
 // start the Stimulus application
 import './bootstrap';
@@ -26,3 +30,30 @@ imagesContext.keys().forEach(imagesContext);
 
 const logosContext = require.context('../public/logos', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
 logosContext.keys().forEach(logosContext);
+
+// Back to top auto display
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+    ) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

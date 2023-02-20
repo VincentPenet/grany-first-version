@@ -63,18 +63,24 @@
         <div class="containerNavbar row text-capitalize">
 
             <!-- breadcrumb -->
-            <p class="containerBreadcrumb col-2 offset-1 text-muted fst-italic text-decoration-underline" aria-label="breadcrumb">{{breadcrumb}}</p>
+            <p class="containerBreadcrumb col-3 offset-1 text-muted fst-italic text-decoration-underline" aria-label="breadcrumb">
+            {% if breadcrumb == "" %}
+                Accueil
+            {% else %}
+                <a class="text-dark" href="{{ path('homepage') }}">Accueil</a> > {{breadcrumb}}
+            {% endif %}
+            </p>
 
             <!-- Classic inline Navbar -->
-            <nav class="headerNavbar col-9 d-flex align-self-end justify-content-end" role="navigation" aria-label="Menu principal">
+            <nav class="headerNavbar col-8 d-flex align-self-end justify-content-end" role="navigation" aria-label="Menu principal">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a class="linkHome text-dark" href="#">accueil</a></li>
+                    <li class="list-inline-item"><a class="linkHome text-dark" href="{{ path('homepage') }}">accueil</a></li>
 
                     <!-- Dropdown link / Catalogue-->
                     <li class="list-inline-item nav-item dropdown"></li>
                         <a class="linkCatalogue text-dark dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" role="navigation" aria-label="Menu du catalogue" aria-haspopup="true" aria-controls="catalogueHeader-id">catalogue</a>
                         <ul id="catalogueHeader-id" class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="linkPresentation dropdown-item text-dark" href="#">présentation</a></li>
+                            <li><a class="linkPresentation dropdown-item text-dark" href="{{ path('home_catalogue') }}">présentation</a></li>
                             <li><a class="linkSoftToys dropdown-item text-dark" href="#">peluches (Amigurumi)</a></li>
                             <li><a class="linkComforters dropdown-item text-dark" href="#">doudous</a></li>
                             <li><a class="linkRattles dropdown-item text-dark" href="#">hochets</a></li>
@@ -92,7 +98,9 @@
 
                     <!-- Dropdown link / About-->
                     <li class="list-inline-item nav-item dropdown">
-                        <a class="linkAbout text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" role="navigation" aria-label="Menu à propos" aria-haspopup="true" aria-controls="aboutHeader-id">à propos</a>
+                        <a class="linkAbout text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" role="navigation" aria-label="Menu à propos" aria-haspopup="true"
+                        aria-controls="aboutHeader-id">à propos</a>
                         <ul id=="aboutHeader-id" class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="linkAboutMe dropdown-item text-dark" href="#">à propos de moi</a></li>
                             <li><a class="linkCleaning dropdown-item text-dark" href="#">entretien nettoyage</a></li>

@@ -1,0 +1,332 @@
+/* Footer style */
+.contact p {
+    font-size: 0.8rem;
+}
+
+/* Footer Navbar */
+.linkPresentationF:hover, .linkSoftToysF:hover, .linkComfortersF:hover, .linkRattlesF:hover, .linkToysF:hover,
+.linkFloorMatsF:hover, .linkBlanketsF:hover, .linkGrannysF:hover, .linkSlippersF:hover, .linkAccessoriesF:hover,
+.linkNoveltiesF:hover, .linkHomeF:hover, .linkCatalogueF:hover, .linkAboutF:hover, .linkAboutMeF:hover,
+.linkCleaningF:hover, .linkPolicyF:hover, .linkMapF:hover, .linkContactF:hover {
+    background-color: rgb(196, 41, 160);
+    border-radius: 0.5rem;
+    color: white!important;
+    font-weight: 800;
+    padding: 0.3rem;
+}
+
+.linkPresentationF:focus, .linkSoftToysF:focus, .linkComfortersF:focus, .linkRattlesF:focus, .linkToysF:focus,
+.linkFloorMatsF:focus, .linkBlanketsF:focus, .linkGrannysF:focus, .linkSlippersF:focus, .linkAccessoriesF:focus,
+.linkNoveltiesF:focus, .linkHomeF:focus, .linkCatalogueF:focus, .linkAboutF:focus, .linkAboutMeF:focus,
+.linkCleaningF:focus, .linkPolicyF:focus, .linkMapF:focus, .linkContactF:focus {
+    background-color: rgb(196, 41, 160);
+    border-radius: 0.5rem;
+    color: white!important;
+    font-weight: 800;
+    padding: 0.3rem;
+}
+
+/* Media queries Bootstrap */
+    /* Extra small devices (portrait phones, 479px and down) */
+    @media (max-width: 479px) {
+        .footerNavbar {
+            display: none!important;
+        }
+    
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkContactF {
+            font-size: 0.2rem;
+            margin-top: 0.2rem;
+            padding: 0;
+        }
+    
+        .infoContact {
+            font-size: 0.2rem;
+            margin-top: 0.1rem;
+        }
+    
+        .infoProduction {
+            font-size: 0.2rem;
+            margin-bottom: 1rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+
+        }
+    
+        /* Small devices (landscape phones, 575px and 480px) */
+        @media (max-width: 575px) and (min-width: 480px) {
+        /* Footer Navbar */
+        .footerNavbar {
+            display: none!important;
+        }
+    
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkContactF {
+            font-size: 0.2rem;
+            margin-top: 0.2rem;
+            padding: 0;
+        }
+    
+        .infoContact {
+            font-size: 0.2rem;
+            margin-top: 0.1rem;
+        }
+    
+        .infoProduction {
+            font-size: 0.2rem;
+            margin-bottom: 1rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+    
+        }
+    
+        /* Small devices (landscape phones, 700px and 576px) */
+        @media (max-width: 700px) and (min-width: 576px) {
+        /* Footer Navbar */
+        .footerNavbar {
+            padding-top: 0;
+        }
+    
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+        .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
+            font-size: 0.3rem;
+            padding-left: 0.1rem;
+        }
+    
+        .linkContactF {
+            font-size: 0.3rem;
+            margin-top: 0.5rem;
+        }
+    
+        .infoContact {
+            font-size: 0.3rem;
+            margin-top: 0.3rem;
+        }
+    
+        .infoProduction {
+            font-size: 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+    
+        }
+    
+        /* Medium devices (tablets, 991px and 701px) */
+        @media (max-width: 991px) and (min-width: 701px) {
+        /* Footer Navbar */
+        .footerNavbar {
+            padding-top: 0;
+        }
+    
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+        .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
+            font-size: 0.5rem;
+            padding-left: 0.4rem;
+        }
+    
+        .linkContactF {
+            font-size: 0.5rem;
+            margin-top: 0.5rem;
+        }
+    
+        .infoContact {
+            font-size: 0.5rem;
+            margin-top: 0.2rem;
+        }
+    
+        .infoProduction {
+            font-size: 0.5rem;
+            margin-bottom: 1rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+    
+        }
+    
+        /* Large devices (desktops, 1229px and 992px) */
+        @media (max-width: 1229px) and (min-width: 992px) {
+        /* Footer Navbar */
+        .footerNavbar {
+            padding-top: 0.1rem;
+        }
+    
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+        .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
+            font-size: 0.7rem;
+            padding-left: 0.6rem;
+        }
+    
+        .linkContactF {
+            font-size: 0.7rem;
+            margin-top: 1rem;
+        }
+    
+        .infoContact {
+            font-size: 0.6rem;
+            margin-top: 0.3rem;
+        }
+    
+        .infoProduction {
+            font-size: 0.6rem;
+            margin-bottom: 1rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+    
+        }
+    
+        /* Extra large devices (large desktops, 1649px and 1230px) */
+        @media (max-width: 1649px) and (min-width: 1230px) {
+        /* Footer Navbar */
+        .footerNavbar {
+            padding-top: 0.5rem;
+        }
+    
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+        .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
+            font-size: 0.9rem;
+            padding-left: 0.8rem;
+        }
+    
+        .linkContactF {
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+        }
+    
+        .infoContact {
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+    
+        .infoProduction {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+    
+        }
+    
+        /* Extremely large devices (large desktops, 1650px and up) */
+        @media (min-width: 1650px) {
+        /* Footer Navbar */
+        .footerNavbar {
+            padding-top: 0.8rem;
+        }
+    
+        .list-inline {
+            margin: 0;
+        }
+    
+        .linkPresentationF, .linkSoftToysF, .linkComfortersF, .linkRattlesF, .linkToysF, .linkFloorMatsF, .linkBlanketsF, .linkGrannysF, .linkSlippersF, .linkAccessoriesF,
+        .linkNoveltiesF, .linkHomeF, .linkCatalogueF, .linkAboutF, .linkAboutMeF, .linkCleaningF, .linkPolicyF, .linkMapF {
+            font-size: 1.2rem;
+            padding-left: 1.5rem;
+        }
+    
+        .linkContactF {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+    
+        .infoContact {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+    
+        .infoProduction {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    
+        .infoProduction p {
+            margin-top: 0.2rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-bottom: 0;
+        }
+    
+        .infoProduction img {
+            width: 2%;
+        }
+    
+    }
