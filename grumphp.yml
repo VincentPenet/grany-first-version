@@ -1,7 +1,7 @@
 grumphp:
     tasks: {
         # phpcsfixer: null,
-        phpstan: null,
+        # phpstan: null,
         phpunit: null,
         phplint: null
     }

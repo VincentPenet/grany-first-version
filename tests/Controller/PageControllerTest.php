@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class PageControllerTest extends WebTestCase
 {
-    public function testHomePage()
+    public function testHomePage(): void
     {
         // On crée un client à partir de la méthode createClient()
         $client = static::createClient();
@@ -19,7 +19,7 @@ class PageControllerTest extends WebTestCase
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
     }
 
-    public function testHomeCataloguePage()
+    public function testHomeCataloguePage(): void
     {
         // On crée un client à partir de la méthode createClient()
         $client = static::createClient();

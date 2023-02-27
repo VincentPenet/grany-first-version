@@ -12,7 +12,7 @@ use Doctrine\Migrations\AbstractMigration;
  */
 final class Version20230226205025 extends AbstractMigration
 {
-    private $titre = [
+    private array $titres = [
         [
             'id' => 1,
             'titre' => 'Monsieur',
@@ -23,7 +23,7 @@ final class Version20230226205025 extends AbstractMigration
         ],
     ];
 
-    private $categorie = [
+    private array $categories = [
         [
             'id' => 1,
             'categorie' => 'peluches amigurumis',
@@ -64,13 +64,18 @@ final class Version20230226205025 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
     }
 
+    /**
+    *
+    * @param array
+    *
+    */
     public function postUp(Schema $schema): void
     {
-        foreach ($this->titre as $titre) {
+        foreach ($this->titres as $titre) {
             $this->connection->insert('civilite', $titre);
         }
 
-        foreach ($this->categorie as $categorie) {
+        foreach ($this->categories as $categorie) {
             $this->connection->insert('categorie_produits', $categorie);
         }
     }
