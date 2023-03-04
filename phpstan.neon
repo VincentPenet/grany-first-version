@@ -2,19 +2,50 @@ includes:
     - vendor/phpstan/phpstan-symfony/extension.neon
     
 parameters:
-    level: max #  you can currently choose from 9 levels (0 is the loosest and 8 is the strictest).
-
-    # Often I use the level 5 because the level 6 checks that every method returns type.
-    # As Symfony code generator commands does not fill those return types, it's quite inconvenient to set a level greater than 5.
+    # Mettre le niveau d'analyse :
+    level: 6
+    
+    # Vous pouvez choisir parmi 9 niveaux (0 est le plus lâche et 8 est le plus strict).
+    # Souvent j’utilise le niveau 5 parce que le niveau 6 vérifie que chaque méthode renvoie le type.
+    # Comme les commandes du générateur de code Symfony ne remplissent pas ces types de retour, il est très gênant de définir un niveau supérieur à 5.
     # Feel free to use the one you prefer. You could even set it to 0 to start slowly
 
     symfony:
-        # or with Symfony 4.2+
+        # ou avec Symfony 4.2+
         # container_xml_path: var/cache/dev/srcApp_KernelDevDebugContainer.xml
-        # or with Symfony 5+
+
+        # ou avec Symfony 5+
         container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml
 
     paths:
+        # Indiquer le chemin du dossier à analyser :
         - src
-        # if you have tests and want to analyze this folder, uncomment the line below
+        
+        # si vous avez des tests et que vous souhaitez analyser ce dossier, décommenter la ligne ci-dessous
         # - tests
+
+        # Pour exclure des fichiers entiers :
+        #  excludePaths:
+                # - tests/*/data/*
+
+    # Pour ignorer certaines erreurs trouvées par PHPStan :
+    ignoreErrors:
+            # Pour Générer une entrée ignoreErrors, se rendre sur le site :
+                # https://phpstan.org/user-guide/ignoring-errors
+            # et remplir les champs pour générer votre entrée ignoreErrors.
+
+            -
+                message: '#^Property App\\Entity\\Civilite\:\:\$contacts with generic interface Doctrine\\Common\\Collections\\Collection does not specify its types\: TKey, T$#'
+                path: src/Entity/Civilite.php
+
+            -
+                message: '#^Unreachable statement \- code above always terminates\.$#'
+                path: .php-cs-fixer.dist.php
+
+            -
+                message: '#^Property DoctrineMigrations\\Version20230226205025\:\:\$titres type has no value type specified in iterable type array\.$#'
+                path: migrations\Version20230226205025.php
+
+            -
+                message: '#^Property DoctrineMigrations\\Version20230226205025\:\:\$categories type has no value type specified in iterable type array\.$#'
+                path: migrations\Version20230226205025.php

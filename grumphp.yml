@@ -1,7 +1,7 @@
 grumphp:
     tasks: {
         # phpcsfixer: null,
-        # phpstan: null,
+        phpstan analyse -c phpstan.neon: null,
         phpunit: null,
         phplint: null
     }

@@ -64,11 +64,6 @@ final class Version20230226205025 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
     }
 
-    /**
-    *
-    * @param array
-    *
-    */
     public function postUp(Schema $schema): void
     {
         foreach ($this->titres as $titre) {
@@ -79,6 +74,7 @@ final class Version20230226205025 extends AbstractMigration
             $this->connection->insert('categorie_produits', $categorie);
         }
     }
+
     public function down(Schema $schema): void
     {
         // this down() migration is auto-generated, please modify it to your needs
