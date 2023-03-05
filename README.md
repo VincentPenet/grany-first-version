@@ -223,6 +223,8 @@ Les vérificateurs et correcteurs généraux:
 
 			vendor/bin/grumphp run
 
+			 php-cs-fixer.BAT --verbose fix
+
 	Dans un fichier Twig :
 
 	Vérifier les erreurs de syntaxe des fichiers Twig avec Linting Twig Templates :

@@ -39,10 +39,6 @@ parameters:
                 path: src/Entity/Civilite.php
 
             -
-                message: '#^Unreachable statement \- code above always terminates\.$#'
-                path: .php-cs-fixer.dist.php
-
-            -
                 message: '#^Property DoctrineMigrations\\Version20230226205025\:\:\$titres type has no value type specified in iterable type array\.$#'
                 path: migrations\Version20230226205025.php
 
