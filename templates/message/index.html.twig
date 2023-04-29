@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<!-- Container Central - Message form -->
+<main class="messageFormPage container-fluid col-11 offset-1">
+
+    <!-- Title -->
+    <h1 class="text-center">Envoyer un message</h1>
+
+    <div class="blockIntro">
+        <p>Envoyez moi un message pour exposer votre projet. Je vous confimerai sa faisabilité.</p>
+        <p>Vous pouvez aussi me contacter pour une demande de renseignement ou pour une suggestion.</p>
+        <p>Je vous répondrai par mail dès que possible.</p>
+    </div>
+
+    {# Adresse mail #}
+    <div class="col-4 offset-2 form">
+        <p class="mt-5">Veuillez saisir votre adresse mail :</p>
+        {{ form_start (myEmailForm, {'attr': {'novalidate': 'novalidate'}})}}
+            {{ form_row(myEmailForm.emailQuery) }}
+            {# <input type="email" name="myEmail" class="form form-control rounded" placeholder="Votre adresse mail" aria-label="Saisir son adresse mail"/> #}
+
+            {# Bouton de validation #}
+            <div class="text-center mt-5">
+                <button class="btn btn-primary">Rechercher</button>
+            </div>
+        {{ form_end (myEmailForm)}}
+    </div>
+
+    {# Formulaire #}
+    <div class="row form">
+
+        <!-- Formulaire de création -->
+        <div class="col-4 offset-2">
+            {# On désactive la validation par défaut du navigateur #}
+            {{ form_start (contactForm, {'attr': {'novalidate': 'novalidate'}})}}
+
+                {# Affichage des champs du formulaire #}
+                <p class="mt-5">Tous les champs du formulaire sont obligatoires</p>
+
+                <div>
+                    {{ form_row(contactForm.gender) }}
+                </div>
+                
+                <div>
+                    {{ form_row(contactForm.lastName) }}
+                </div>
+
+                <div>
+                    {{ form_row(contactForm.firstName) }}
+                </div>
+
+                <div>
+                    {{ form_row(contactForm.mail) }}
+                </div>
+
+                <div>
+                    {# {{ form_row(contactForm.objet_message) }} #}
+                </div>
+
+                <div>
+                    {# {{ form_row(contactForm.message) }} #}
+                </div>
+
+                {# TODO Mettre le lien #}
+                <a href="#" target = "_blank" class="mt-5">Lire la politique de confidentialité</a>
+                <div>
+                    {{ form_row(contactForm.rgpd_validation) }}
+                </div>
+
+                {# Affichage du Recaptcha #}
+                <div class="mt-3" id="html_element"></div>
+
+                {# Bouton de validation #}
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary">Envoyer</button>
+                </div>
+
+            {{ form_end (contactForm)}}
+        </div>
+    </div>
+</main>
+
+{% endblock %}
+
+{# Script du Recaptcha #}
+{% block javascripts %}
+    {# Appel de l'api.js de Google #}
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
+    <script>
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+                'sitekey' : '{{ recaptcha_site_key }}'
+            });
+        };
+    </script>
+{% endblock %}

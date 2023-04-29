@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace App\Entity;
 
 use App\Repository\ContactsRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: ContactsRepository::class)]
 class Contacts
@@ -23,6 +26,9 @@ class Contacts
     private ?string $prenom = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\Email(
+        message: 'Cette adresse mail n\'est pas valide',
+    )]
     private ?string $mail = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
@@ -31,18 +37,20 @@ class Contacts
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $maj_le = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $objet_message = null;
-
-    #[ORM\Column(type: Types::TEXT)]
-    private ?string $message = null;
-
     #[ORM\Column]
     private ?int $rgpd_validation = null;
 
     #[ORM\ManyToOne(inversedBy: 'contacts')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Civilite $civilite = null;
+
+    #[ORM\OneToMany(mappedBy: 'contact', targetEntity: Messages::class)]
+    private Collection $messages;
+
+    public function __construct()
+    {
+        $this->messages = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -109,30 +117,6 @@ class Contacts
         return $this;
     }
 
-    public function getObjetMessage(): ?string
-    {
-        return $this->objet_message;
-    }
-
-    public function setObjetMessage(string $objet_message): self
-    {
-        $this->objet_message = $objet_message;
-
-        return $this;
-    }
-
-    public function getMessage(): ?string
-    {
-        return $this->message;
-    }
-
-    public function setMessage(string $message): self
-    {
-        $this->message = $message;
-
-        return $this;
-    }
-
     public function getRgpdValidation(): ?int
     {
         return $this->rgpd_validation;
@@ -153,6 +137,36 @@ class Contacts
     public function setCivilite(?Civilite $civilite): self
     {
         $this->civilite = $civilite;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Messages>
+     */
+    public function getMessages(): Collection
+    {
+        return $this->messages;
+    }
+
+    public function addMessage(Messages $message): self
+    {
+        if (!$this->messages->contains($message)) {
+            $this->messages->add($message);
+            $message->setContact($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMessage(Messages $message): self
+    {
+        if ($this->messages->removeElement($message)) {
+            // set the owning side to null (unless already changed)
+            if ($message->getContact() === $this) {
+                $message->setContact(null);
+            }
+        }
 
         return $this;
     }

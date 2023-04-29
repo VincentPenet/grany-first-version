@@ -1,7 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeCatalogueController!{% endblock %}
-
 {% block body %}
 
 <!-- Container Central - Home catalogue -->
@@ -17,7 +15,7 @@
         <p>Que ce soit pour une naissance, un anniversaire ou tout simplement pour faire plaisir, choisissez un cadeau original fait main et sur mesure.</p>
         <p class="fw-bold">Mes produits peuvent être personnalisés ou faire l'objet d'une demande particulière.</p>
         <p class="fw-bold">Pour cela, 
-        <a href="#">Envoyez moi un message</a> 
+        <a href="{{ path('app_message_form') }}">Envoyez moi un message</a> 
         avec un descriptif le plus précis possible de votre projet.</p>
         <p>Je vous répondrai quant à sa faisabilité.</p>
     </div>

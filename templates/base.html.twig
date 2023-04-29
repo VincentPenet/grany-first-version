@@ -29,10 +29,6 @@
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-
     </head>
 
     <body>
@@ -43,9 +39,7 @@
             {% include 'partials/_header.html.twig' %}
         {% endblock %}
 
-        {% block body %}
-        
-        {% endblock %}
+        {% block body %}{% endblock %}
 
         <!-- Back to top auto display -->
         <a id="btn-back-to-top" href="#" title="Retour Haut de page">
@@ -57,6 +51,10 @@
         {% endblock %}
 
         </div>
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
 
     </body>
 

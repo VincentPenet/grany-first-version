@@ -1,5 +1,17 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    # Le thème de formulaire Boostrap 5
+    form_themes: ['bootstrap_5_layout.html.twig']
+    date:
+        # The timezone used when formatting dates, when set to null, the timezone returned by date_default_timezone_get() is used
+        timezone: "Europe/Paris"
+        format: 'd/m/Y'
+    globals:
+        recaptcha_site_key: "%env(RECAPTCHA_SITE_KEY)%"
+        recaptcha_secret_key: "%env(RECAPTCHA_SECRET_KEY)%"
+        app_name: '%app_name%'
+        url_site: '%url_site%'
+
 
 when@test:
     twig:

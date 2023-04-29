@@ -1,0 +1,26 @@
+/* Body message form page style */
+.messageFormPage {
+    font-family: 'dancing script', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Block Intro */
+.messageFormPage h1 {
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.blockIntro {
+    margin-top: 3rem;
+}
+
+.blockIntro p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Block form */
+.form, .btn {
+    font-size: 1.8rem;
+}

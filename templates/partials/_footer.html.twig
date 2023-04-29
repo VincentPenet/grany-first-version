@@ -44,7 +44,7 @@
 
 		<!-- Container Middle - Send message / Contact -->
 		<div class="row align-items-center justify-content-evenly text-center">
-			<a class="linkContactF col-2 text-capitalize text-dark fw-bold" href="#">envoyer un message</a>
+			<a class="linkContactF col-2 text-capitalize text-dark fw-bold" href="{{ path('app_message_form') }}">envoyer un message</a>
 			<div class="infoContact">
 				<p class="m-0"><span><i class="fa-regular fa-envelope"></i></span> contact@grany.fr</p>
 				<p class="mb-0">59000 Lille - France</p>
@@ -53,7 +53,7 @@
 
 	<!-- Container Bottom - Information production -->
 	<div class="infoProduction d-flex justify-content-end align-items-center">
-		<p class="col-2 offset-7 text-end">2022 Lille - </p>
+		<p class="col-2 offset-7 text-end">2023 Lille - </p>
 		<img class="col-1 img-fluid" src="{{ asset('build/images/pom-grany.jpg')}}" alt="Logo pomme">
 		<p class="col-2 text-start">Pom & Grany Production</p>
 	</div>

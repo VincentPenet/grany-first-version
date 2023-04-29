@@ -17,6 +17,9 @@ parameters:
         # ou avec Symfony 5+
         container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml
 
+    # Ignorer tous les tableaux génériques
+    checkGenericClassInNonGenericObjectType: false
+    
     paths:
         # Indiquer le chemin du dossier à analyser :
         - src

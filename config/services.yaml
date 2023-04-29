@@ -5,6 +5,13 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
 
+    app_name: 'grany'
+    url_site: 'https://www.grany.fr'
+
+    # Variable du Recaptcha
+    recaptcha_site_key: '%env(RECAPTCHA_SITE_KEY)%'
+    recaptcha_secret_key: '%env(RECAPTCHA_SECRET_KEY)%'
+
 services:
     # default configuration for services in *this* file
     _defaults:

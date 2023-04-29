@@ -19,9 +19,6 @@ class Preferences
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $cree_le = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
-    private ?\DateTimeInterface $maj_le = null;
-
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
     private ?Contacts $contact = null;
@@ -43,18 +40,6 @@ class Preferences
     public function setCreeLe(\DateTimeInterface $cree_le): self
     {
         $this->cree_le = $cree_le;
-
-        return $this;
-    }
-
-    public function getMajLe(): ?\DateTimeInterface
-    {
-        return $this->maj_le;
-    }
-
-    public function setMajLe(?\DateTimeInterface $maj_le): self
-    {
-        $this->maj_le = $maj_le;
 
         return $this;
     }

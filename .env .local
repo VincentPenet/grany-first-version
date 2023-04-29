@@ -3,3 +3,14 @@ DATABASE_URL="mysql://root:@127.0.0.1:3306/grany?serverVersion=mariadb-10.4.25"
 
 # set it to 1 to enable the debug mode
 APP_DEBUG=1
+
+# TODO : Enlever le Recaptcha de test
+###> Google ReCaptche v3 pour test ###
+RECAPTCHA_SITE_KEY=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+RECAPTCHA_SECRET_KEY=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
+###< Google ReCaptche v3 ###
+
+###> Google ReCaptche v3 ###
+# RECAPTCHA_SITE_KEY=6LdPVcolAAAAAL4xOewmAi3nWksL67z-nktLOOX5
+# RECAPTCHA_SECRET_KEY=6LdPVcolAAAAALg9r91kZfINTuKj1a7a8eb6GhAk
+###< Google ReCaptche v3 ###
