@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace App\Form;
 
 use App\Entity\Civilite;
-use App\Entity\Contacts;
-use App\Repository\CiviliteRepository;
 use App\Entity\Messages;
+use App\Repository\CiviliteRepository;
 use App\Repository\PreferencesRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -124,7 +122,6 @@ class MessageFormType extends AbstractType
                     'minMessage' => 'L\'objet du message doit être composé d\'au moins {{ limit }} caractères',
                 ]),
             ],
-
         ])
         // ->add('preferences', EntityType::class, [
         //     'label' => false,

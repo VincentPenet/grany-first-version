@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\DataFixtures;
 
 use App\Entity\Contacts;
@@ -26,7 +28,7 @@ class ContactsFixtures extends Fixture
             $mail = $faker->email();
 
             $contact = new Contacts();
-            $contact->setCivilite($this->civiliteRepository->find(rand(1, 2)));
+            $contact->setCivilite($this->civiliteRepository->find(random_int(1, 2)));
             $contact->setNom($faker->lastName());
             $contact->setPrenom($faker->firstName());
             $contact->setMail($mail);

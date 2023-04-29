@@ -52,7 +52,7 @@ class MessageFormController extends AbstractController
         ])
     ->getForm();
 
-    $myEmailForm->handleRequest($request);
+        $myEmailForm->handleRequest($request);
 
         // $email = $_POST['myEmail'];
         // dd($email);
