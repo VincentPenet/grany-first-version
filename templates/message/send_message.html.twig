@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('headerCss') }}
+	{{ encore_entry_link_tags('footerCss') }}
+	{{ encore_entry_link_tags('menuCss') }}
+	{{ encore_entry_link_tags('backTotopCss') }}
+	{{ encore_entry_link_tags('messageFormCss') }}
+{% endblock %}
+
+{% block body %}
+<!-- Container Central - Message form -->
+<div class="messageFormPage container-fluid col-11 offset-1">
+
+    <!-- Title -->
+    <h1 class="text-center">Envoyer un message</h1>
+
+    {# Formulaire d'envoi message seul + bouton modification contact #}
+    <div class="row form">
+        <div class="col-4 offset-2">
+            {# On désactive la validation par défaut du navigateur #}
+            {{ form_start (messageForm, {'attr': {'novalidate': 'novalidate'} }) }}
+
+                {# Affichage des champs du formulaire #}
+                <p class="mt-5">Tous les champs du formulaire sont obligatoires</p>
+
+                <div>
+                    {# {{ contact.mail }} #}
+                </div>
+                
+                <div>
+                    {# {{ form_row(messageForm.lastName) }}
+                </div>
+
+                <div>
+                    {{ form_row(messageForm.firstName) }}
+                </div>
+
+                <div>
+                    {{ form_row(messageForm.mail) }}
+                </div>
+ #}
+                <div>
+                    {{ form_row(messageForm.objetMessage) }}
+                </div>
+
+                <div>
+                    {{ form_row(messageForm.message) }}
+                </div>
+
+                {# Affichage du Recaptcha #}
+                <div class="mt-3" id="html_element"></div>
+
+                {# Boutons Action #}
+                <div class="my-3 col-10 offset-1">
+                    <div class="ml-auto d-flex justify-content-center">
+                        {# Bouton Retour #}
+                        <a href="{{ path('app_message') }}" role="button" aria-label="retour" class="btn btn-danger">{{ button_label|default('Retour') }}</a>
+
+                        {# Bouton Envoyer #}
+                        <button class="btn btn-primary ms-5" type="submit" aria-label="Envoyer le message">{{ button_label|default('Envoyer') }}</button>
+                    </div>
+                </div>
+
+            {{ form_end (messageForm)}}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{# Script du Recaptcha #}
+{% block javascripts %}
+    {# Appel de l'api.js de Google #}
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
+    <script>
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+                'sitekey' : '{{ recaptcha_site_key }}'
+            });
+        };
+    </script>
+{% endblock %}

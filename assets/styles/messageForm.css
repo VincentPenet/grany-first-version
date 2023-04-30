@@ -24,3 +24,12 @@
 .form, .btn {
     font-size: 1.8rem;
 }
+
+/* Choix du type de contact */
+.hideKnowContact {
+    display: none;
+}
+
+.hideFirstContact {
+    display: none;
+}

@@ -1,8 +1,16 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+	{{ encore_entry_link_tags('headerCss') }}
+	{{ encore_entry_link_tags('footerCss') }}
+	{{ encore_entry_link_tags('menuCss') }}
+	{{ encore_entry_link_tags('backTotopCss') }}
+	{{ encore_entry_link_tags('messageFormCss') }}
+{% endblock %}
+
 {% block body %}
 <!-- Container Central - Message form -->
-<main class="messageFormPage container-fluid col-11 offset-1">
+<div class="messageFormPage container-fluid col-11 offset-1">
 
     <!-- Title -->
     <h1 class="text-center">Envoyer un message</h1>
@@ -11,32 +19,47 @@
         <p>Envoyez moi un message pour exposer votre projet. Je vous confimerai sa faisabilité.</p>
         <p>Vous pouvez aussi me contacter pour une demande de renseignement ou pour une suggestion.</p>
         <p>Je vous répondrai par mail dès que possible.</p>
+
+        {# Message d'erreur de mail #}
+        <div class="form col-8 fw-bold text-danger">
+        {% for avertissement in app.flashes('avertissement') %}
+            {{ avertissement }}
+        {% endfor %}
+        </div>
     </div>
 
-    {# Adresse mail #}
-    <div class="col-4 offset-2 form">
-        <p class="mt-5">Veuillez saisir votre adresse mail :</p>
-        {{ form_start (myEmailForm, {'attr': {'novalidate': 'novalidate'}})}}
-            {{ form_row(myEmailForm.emailQuery) }}
-            {# <input type="email" name="myEmail" class="form form-control rounded" placeholder="Votre adresse mail" aria-label="Saisir son adresse mail"/> #}
+    {# Contact connu #}
 
-            {# Bouton de validation #}
-            <div class="text-center mt-5">
+    <div class="offset-2 form mt-5">
+        <p>Veuillez choisir une des situations suivantes :</p>
+
+        <div class="firstContact mb-5 ms-5"><input type="checkbox" class="ps-5"/> Je vous envoie un message pour la première fois</div>
+
+        <div class="knowContact mb-5 ms-5"><input type="checkbox" class="ps-5"/> Vous me connaissez. J'ai déjà envoyé un message</div>
+    </div>
+
+    {# Recherche contact par l'adresse mail #}
+    <div class="searchContact hideKnowContact col-4 offset-2 form mt-5">
+        <p class="mt-5">Veuillez saisir votre adresse mail :</p>
+        {{ form_start (emailQueryForm, {'attr': {'novalidate': 'novalidate'}}) }}
+            {{ form_row(emailQueryForm.emailQuery) }}
+
+            {# Bouton de recherche #}
+            <div class="text-center my-5">
                 <button class="btn btn-primary">Rechercher</button>
             </div>
-        {{ form_end (myEmailForm)}}
+        {{ form_end (emailQueryForm)}}
     </div>
 
-    {# Formulaire #}
-    <div class="row form">
-
-        <!-- Formulaire de création -->
-        <div class="col-4 offset-2">
+    {# Formulaire de création d'un contact #}
+    <div class="formContact hideFirstContact row form">
+        <div class="col-5 offset-2">
             {# On désactive la validation par défaut du navigateur #}
-            {{ form_start (contactForm, {'attr': {'novalidate': 'novalidate'}})}}
+            {{ form_start (contactForm, {'attr': {'novalidate': 'novalidate'}}) }}
 
                 {# Affichage des champs du formulaire #}
-                <p class="mt-5">Tous les champs du formulaire sont obligatoires</p>
+                <p>Veuillez remplir le formulaire de contact ci-dessous</p>
+                <p class="mt-3">Tous les champs du formulaire doivent être obligatoirement remplis</p>
 
                 <div>
                     {{ form_row(contactForm.gender) }}
@@ -54,14 +77,6 @@
                     {{ form_row(contactForm.mail) }}
                 </div>
 
-                <div>
-                    {# {{ form_row(contactForm.objet_message) }} #}
-                </div>
-
-                <div>
-                    {# {{ form_row(contactForm.message) }} #}
-                </div>
-
                 {# TODO Mettre le lien #}
                 <a href="#" target = "_blank" class="mt-5">Lire la politique de confidentialité</a>
                 <div>
@@ -72,19 +87,22 @@
                 <div class="mt-3" id="html_element"></div>
 
                 {# Bouton de validation #}
-                <div class="text-center mt-5">
-                    <button class="btn btn-primary">Envoyer</button>
+                <div class="text-center my-5">
+                    <button class="btn btn-primary">Valider</button>
                 </div>
 
             {{ form_end (contactForm)}}
         </div>
     </div>
-</main>
+</div>
 
 {% endblock %}
 
-{# Script du Recaptcha #}
 {% block javascripts %}
+	{# Appel aux fichiers js #}
+	{{ encore_entry_script_tags('choiceTypeContact') }}
+
+    {# Script du Recaptcha #}
     {# Appel de l'api.js de Google #}
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>

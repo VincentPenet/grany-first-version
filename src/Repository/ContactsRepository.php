@@ -41,6 +41,22 @@ class ContactsRepository extends ServiceEntityRepository
         }
     }
 
+    /**
+    * Trouve un contact ou pas qui correspond au mail donné
+    *
+    * @param string $email
+    *
+    * @return Contacts[] Returns an array of Contacts objects
+    */
+    public function findByEmail(string $email): ?Contacts
+    {
+        return $this->createQueryBuilder('c')
+            ->andWhere('c.mail = :email')
+            ->setParameter('email', $email)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+
 //    /**
 //     * @return Contacts[] Returns an array of Contacts objects
 //     */

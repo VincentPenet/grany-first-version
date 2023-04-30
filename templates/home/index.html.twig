@@ -1,7 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block stylesheets %}
+	{{ encore_entry_link_tags('headerCss') }}
+	{{ encore_entry_link_tags('footerCss') }}
+	{{ encore_entry_link_tags('menuCss') }}
+	{{ encore_entry_link_tags('backTotopCss') }}
+	{{ encore_entry_link_tags('bodyHomePageCss') }}
+{% endblock %}
 
+{% block body %}
 <!-- Container Central - Products on click -->
 <div class="imageBabyRoom col-11 offset-1">
 

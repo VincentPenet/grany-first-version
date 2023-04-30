@@ -25,18 +25,20 @@
         {# <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto"> #}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script">
 		
+        {{ encore_entry_link_tags('app') }}
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
     </head>
 
     <body>
+        {{ include('partials/utils/flash.html.twig') }}
+
         <!-- Container Page -->
 		<div class="container-fluid">
 
         {% block header %}
-            {% include 'partials/_header.html.twig' %}
+            {% include 'partials/navigation/_header.html.twig' %}
         {% endblock %}
 
         {% block body %}{% endblock %}
@@ -47,7 +49,7 @@
         </a>
 
         {% block footer %}
-            {% include 'partials/_footer.html.twig' %}
+            {% include 'partials/navigation/_footer.html.twig' %}
         {% endblock %}
 
         </div>

@@ -1,5 +1,13 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+	{{ encore_entry_link_tags('headerCss') }}
+	{{ encore_entry_link_tags('footerCss') }}
+	{{ encore_entry_link_tags('menuCss') }}
+	{{ encore_entry_link_tags('backTotopCss') }}
+	{{ encore_entry_link_tags('bodyHomeCatalogueCss') }}
+{% endblock %}
+
 {% block body %}
 
 <!-- Container Central - Home catalogue -->
@@ -15,7 +23,7 @@
         <p>Que ce soit pour une naissance, un anniversaire ou tout simplement pour faire plaisir, choisissez un cadeau original fait main et sur mesure.</p>
         <p class="fw-bold">Mes produits peuvent être personnalisés ou faire l'objet d'une demande particulière.</p>
         <p class="fw-bold">Pour cela, 
-        <a href="{{ path('app_message_form') }}">Envoyez moi un message</a> 
+        <a href="{{ path('app_message') }}">Envoyez moi un message</a> 
         avec un descriptif le plus précis possible de votre projet.</p>
         <p>Je vous répondrai quant à sa faisabilité.</p>
     </div>
@@ -48,8 +56,7 @@
                     <img class="img-fluid" src="{{asset('build/images/rattles.png')}}" alt="Hochet lapin">
                 </a>
             </div>
-    
-        </div> <!-- Line N°1 -->
+        </div>
     
         <!-- Line N°2 -->
         <div class="row col-12 justify-content-between">
@@ -105,10 +112,8 @@
                     <img class="img-fluid" src="{{asset('build/images/novelties.png')}}" alt="Ampoule idée">
                 </a>
             </div>
-        </div> <!-- Line N°3 -->
-    
-    </div> <!-- Grid -->
-
-</div> <!-- Container Central - Home catalogue -->
+        </div>
+    </div>
+</div>
 
 {% endblock %}

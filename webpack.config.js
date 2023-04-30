@@ -21,6 +21,15 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
+    .addEntry('choiceTypeContact', './assets/js/choice-type-contact.js')
+    .addStyleEntry('headerCss', './assets/styles/header.css')
+    .addStyleEntry('footerCss', './assets/styles/footer.css')
+    .addStyleEntry('menuCss', './assets/styles/menu.css')
+    .addStyleEntry('backTotopCss', './assets/styles/backTotop.css')
+    .addStyleEntry('bodyHomePageCss', './assets/styles/bodyHomePage.css')
+    .addStyleEntry('bodyHomeCatalogueCss', './assets/styles/bodyHomeCatalogue.css')
+    .addStyleEntry('messageFormCss', './assets/styles/messageForm.css')
+
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
