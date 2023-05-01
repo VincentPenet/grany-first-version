@@ -21,11 +21,11 @@
         <p>Je vous répondrai par mail dès que possible.</p>
 
         {# Message d'erreur de mail #}
-        <div class="form col-8 fw-bold text-danger">
+        <p class="form col-8 fw-bold text-danger">
         {% for avertissement in app.flashes('avertissement') %}
             {{ avertissement }}
         {% endfor %}
-        </div>
+        </p>
     </div>
 
     {# Contact connu #}
