@@ -9,7 +9,6 @@ use App\Entity\Messages;
 use App\Form\ContactFormType;
 use App\Form\MessageFormType;
 use App\Repository\ContactsRepository;
-use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
@@ -22,19 +21,13 @@ use Symfony\Component\Validator\Constraints\Regex;
 class MessageController extends AbstractController
 {
     /**
-     * Page "Envoi d'un message"
+     * Page "Envoi d'un message".
      *
-     * @param Contacts               $contact
-     * @param ContactsRepository     $contactsRepository
-     * @param EntityManagerInterface $entityManager
-     * @param Request                $request
-     *
-     * @return Response
+     * @param Contacts $contact
      */
     #[Route('/message', name: 'app_message')]
     public function index(ContactsRepository $contactsRepository, EntityManagerInterface $entityManager, Request $request): Response
     {
-        
         // Formulaire de création d'un nouveau contact
         $contact = new Contacts();
 
@@ -68,10 +61,15 @@ class MessageController extends AbstractController
             $resultEmail = $contactsRepository->findByEmail($contactEmail);
 
             if (isset($resultEmail)) {
+                $message = new Messages();
+
+                $messageForm = $this->createForm(MessageFormType::class, $message);
+                $messageForm->handleRequest($request);
+        
                 return $this->render('message/send_message.html.twig', [
                     'breadcrumb' => 'Message > Envoyer un message',
-                    'contact' => $contactEmail,
-                    'emailQueryForm' => $emailQueryForm->createView(),
+                    'contact' => $resultEmail,
+                    'messageForm' => $messageForm->createView(),
                 ]);
             } else {
                 // Message Flash
@@ -92,6 +90,8 @@ class MessageController extends AbstractController
                 $this->addFlash('danger', 'Vous n\'avez pas coché la case "je ne suis pas un robot".');
                 return $this->render('message/index.html.twig', [
                     'contactForm' => $contactForm->createView(),
+                    'emailQueryForm' => $emailQueryForm->createView(),
+                    'breadcrumb' => ' Message',
                 ]);
             } else {
                 $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $this->getParameter('recaptcha_secret_key') . '&response=' . $_POST['g-recaptcha-response'];
@@ -109,7 +109,11 @@ class MessageController extends AbstractController
 
                 if (empty($responseRecaptcha) || is_null($responseRecaptcha)) {
                     $this->addFlash('danger', 'Captcha non valide.');
-                    return $this->redirectToRoute('app_contact_form');
+                    return $this->render('message/index.html.twig', [
+                        'contactForm' => $contactForm->createView(),
+                        'emailQueryForm' => $emailQueryForm->createView(),
+                        'breadcrumb' => ' Message',
+                    ]);
                 } else {
                     $data = json_decode($responseRecaptcha);
 
@@ -119,38 +123,38 @@ class MessageController extends AbstractController
                         // Vérification en bdd de la non existence du mail
                         $contactEmail = $contactForm->get('mail')->getData();
                         $resultEmail = $contactsRepository->findByEmail($contactEmail);
-            
+
                         if (isset($resultEmail)) {
                             // Message Flash
                             $session = $request->getSession();
                             $session->getFlashBag()->add('avertissement', 'Attention : Nous avons l\'honneur de vous connaître. Veuillez cocher la case "Vous me connaissez. J\'ai déjà envoyé un message"');
-            
+
                             return $this->render('message/index.html.twig', [
                                 'breadcrumb' => ' Message',
                                 'emailQueryForm' => $emailQueryForm->createView(),
                                 'contactForm' => $contactForm->createView(),
                             ]);
                         } else {
+                            $contact->setCivilite($contactForm->get('gender')->getData());
+
+                            $contact->setNom($contactForm->get('lastName')->getData());
+
+                            $contact->setPrenom($contactForm->get('firstName')->getData());
+
+                            $contact->setMail($contactForm->get('mail')->getData());
+
+                            $contact->setCreeLe(new \DateTimeImmutable());
+
+                            $contact->setRgpdValidation($contactForm->get('rgpd_validation')->getData());
+
+                            $entityManager->persist($contact);
+
+                            $entityManager->flush();
+
+                            return $this->render('message/send_message.html.twig', [
+                                'breadcrumb' => 'Envoyer un message',
+                            ]);
                         }
-            
-                        $contact->setCivilite($contactForm->get('gender')->getData());
-
-                        $contact->setNom($contactForm->get('lastName')->getData());
-
-                        $contact->setPrenom($contactForm->get('firstName')->getData());
-
-                        $contact->setMail($contactForm->get('mail')->getData());
-
-                        $contact->setCreeLe(new \DateTimeImmutable());
-
-                        $contact->setRgpdValidation($contactForm->get('rgpd_validation')->getData());
-
-                        $entityManager->persist($contact);
-
-                        $entityManager->flush();
-
-                        return $this->render('message/send_message.html.twig', [
-                        ]);
                     }
                 }
             }
@@ -164,15 +168,11 @@ class MessageController extends AbstractController
     }
 
     /**
-     * Page "Formulaire d'envoi d'un message"
+     * Page "Formulaire d'envoi d'un message".
      *
-     * @param Contacts               $contact
-     * @param ContactsRepository     $contactsRepository
-     * @param EntityManagerInterface $entityManager
-     * @param Messages               $message
-     * @param Request                $request
-     *
-     * @return Response
+     * @param Contacts           $contact
+     * @param ContactsRepository $contactsRepository
+     * @param Messages           $message
      */
     #[Route('/message/form', name: 'app_message_form')]
     public function sendMessage(EntityManagerInterface $entityManager, Request $request): Response
@@ -188,6 +188,7 @@ class MessageController extends AbstractController
                 $this->addFlash('danger', 'Vous n\'avez pas coché la case "je ne suis pas un robot".');
                 return $this->render('message/send_message.html.twig', [
                     'messageForm' => $messageForm->createView(),
+                    'breadcrumb' => 'Envoyer un message',
                 ]);
             } else {
                 $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $this->getParameter('recaptcha_secret_key') . '&response=' . $_POST['g-recaptcha-response'];
@@ -213,10 +214,10 @@ class MessageController extends AbstractController
                         // Traitement du formulaire
 
                         $message->setObjetMessage($messageForm->get('objet_message')->getData());
-                        
+
                         $message->setmessage($messageForm->get('message')->getData());
 
-                        $message->setCreeLe(new DateTimeImmutable());
+                        $message->setCreeLe(new \DateTimeImmutable());
 
                         // $message->setCategorieProduit($messageForm->get('preferences')->getData());
 

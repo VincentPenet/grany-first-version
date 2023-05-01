@@ -13,7 +13,7 @@
 <div class="messageFormPage container-fluid col-11 offset-1">
 
     <!-- Title -->
-    <h1 class="text-center">Envoyer un message</h1>
+    <h1 class="text-center">Message</h1>
 
     {# Formulaire d'envoi message seul + bouton modification contact #}
     <div class="row form">
@@ -21,27 +21,25 @@
             {# On désactive la validation par défaut du navigateur #}
             {{ form_start (messageForm, {'attr': {'novalidate': 'novalidate'} }) }}
 
-                {# Affichage des champs du formulaire #}
-                <p class="mt-5">Tous les champs du formulaire sont obligatoires</p>
+                {# Affichage des données du contact #}
+                <div class="my-3 offset-1 border border-dark">
+                    <div class="ml-auto d-flex justify-content-center">
+                        <div>
+                            <p class="mt-5">De la part de {{ contact.civilite.titre }} {{ contact.nom|upper }} {{ contact.prenom }}</p>
 
-                <div>
-                    {# {{ contact.mail }} #}
+                            {# Bouton Modifier #}
+                            <a href="#" class="btn btn-success ms-5" type="submit" aria-label="Modifier mes informations">{{ button_label|default('Modifier mes informations') }}</a>
+                        </div>
+
+                        <p>Votre adresse mail : {{ contact.mail }}</p>
+                    </div>
                 </div>
+
+                {# Affichage des champs du formulaire #}
+                <p class="mt-5">Tous les champs du message sont obligatoires</p>
                 
                 <div>
-                    {# {{ form_row(messageForm.lastName) }}
-                </div>
-
-                <div>
-                    {{ form_row(messageForm.firstName) }}
-                </div>
-
-                <div>
-                    {{ form_row(messageForm.mail) }}
-                </div>
- #}
-                <div>
-                    {{ form_row(messageForm.objetMessage) }}
+                    {{ form_row(messageForm.objet_message) }}
                 </div>
 
                 <div>
